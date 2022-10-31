@@ -1,0 +1,6 @@
+from django.apps import AppConfig
+
+
+class FishShopConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'e_fish_shop_app.fish_shop'
