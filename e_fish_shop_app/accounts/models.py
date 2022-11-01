@@ -4,7 +4,7 @@ from django.db import models
 
 class MyAccountManager(BaseUserManager):
     # normal user
-    def create_user(self, first_name, last_name, username, email, password):
+    def create_user(self, first_name, last_name, username, email, password=None):
         if not email:
             raise ValueError('User must have an email address.')
 
@@ -54,9 +54,10 @@ class Account(AbstractBaseUser):
     is_superadmin = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username', ' first_name', 'last_name']
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
 
     objects = MyAccountManager()
+
     def __str__(self):
         return self.email
 
