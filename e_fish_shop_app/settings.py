@@ -28,6 +28,7 @@ INSTALLED_APPS = [
 
     'e_fish_shop_app.fish_shop',
     'e_fish_shop_app.category',
+    'e_fish_shop_app.accounts',
 ]
 
 MIDDLEWARE = [
@@ -61,16 +62,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'e_fish_shop_app.wsgi.application'
 
+AUTH_USER_MODEL = 'accounts.Account'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
