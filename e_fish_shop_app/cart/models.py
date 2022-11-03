@@ -17,5 +17,9 @@ class CartItem(models.Model):
     quantity = models.IntegerField()
     is_active = models.BooleanField(default=True)
 
+    def sub_total_price(self):
+        """Calculate the total price for an item based on the quantity"""
+        return self.product.price * self.quantity
+
     def __str__(self):
         return self.product
