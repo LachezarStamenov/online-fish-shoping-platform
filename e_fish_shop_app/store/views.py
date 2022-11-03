@@ -1,6 +1,4 @@
 from django.shortcuts import render, get_object_or_404
-from django.views import generic as views
-
 from e_fish_shop_app.category.models import Category
 from e_fish_shop_app.store.models import Product
 
@@ -21,3 +19,13 @@ def store(request, category_slug=None):
     return render(request, 'store/store.html', context)
 
 
+def show_product_details(request, category_slug, product_slug):
+    """Show the product details information"""
+    try:
+        product = Product.objects.get(category__slug=category_slug, slug=product_slug)
+    except Exception as ex:
+        raise ex
+    context = {
+        'product': product,
+    }
+    return render(request, 'store/product_details.html', context)
