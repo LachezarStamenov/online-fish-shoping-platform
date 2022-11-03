@@ -1,25 +1,17 @@
 from django.core.exceptions import ObjectDoesNotExist
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
+from e_fish_shop_app.cart.helpers import _get_cart_id, _get_cart
 from e_fish_shop_app.cart.models import Cart, CartItem
 from e_fish_shop_app.store.models import Product
-
-
-def _get_cart_id(request):
-    """Function to get the cart ID from session key"""
-    cart = request.session.session_key
-    if not cart:
-        cart = request.session.create()
-    return cart
 
 
 def add_product_to_cart(request, product_pk):
     product = Product.objects.filter(pk=product_pk).get()
     try:
-        cart = Cart.objects.filter(cart_id=_get_cart_id(request)).get()
-
+        cart = _get_cart(request)
     except Cart.DoesNotExist:
-        cart = Cart.objects.create(cart_id=_get_cart_id(request))
+        cart = _get_cart(request)
         cart.save()
 
     try:
@@ -33,10 +25,29 @@ def add_product_to_cart(request, product_pk):
     return redirect('cart')
 
 
-def cart(request, total_price=0, quantity=0, cart_items=None):
+def remove_product_from_cart(request, product_pk):
+    cart = _get_cart(request)
+    product = get_object_or_404(Product, pk=product_pk)
+    cart_item = CartItem.objects.filter(product=product, cart=cart).get()
+    if cart_item.quantity > 1:
+        cart_item.quantity -= 1
+        cart_item.save()
+    else:
+        cart_item.delete()
+    return redirect('cart')
 
+
+def remove_cart_item(request, product_pk):
+    cart = _get_cart(request)
+    product = get_object_or_404(Product, pk=product_pk)
+    cart_item = CartItem.objects.filter(product=product, cart=cart).get()
+    cart_item.delete()
+    return redirect('cart')
+
+
+def cart(request, total_price=0, quantity=0, cart_items=None):
     try:
-        cart = Cart.objects.filter(cart_id=_get_cart_id(request)).get()
+        cart = _get_cart(request)
         cart_items = CartItem.objects.filter(cart=cart, is_active=True)
         for cart_item in cart_items:
             total_price += (cart_item.product.price * cart_item.quantity)
