@@ -1,46 +1,12 @@
 from django.core.paginator import Paginator
+from django.db.models import Q
 from django.shortcuts import render, get_object_or_404
 from e_fish_shop_app.cart.helpers import _get_cart_id
 from e_fish_shop_app.cart.models import CartItem
 from e_fish_shop_app.category.models import Category
 from e_fish_shop_app.store.models import Product
+from django.views import generic as views
 
-
-# class StoreView(views.DetailView):
-#     model = Product
-#     template_name = 'store/store.html'
-#     context_object_name = 'products'
-#     paginate_by = 1
-#
-#     def dispatch(self, request, *args, **kwargs):
-#         self.page = request('page', None)
-#         return self.page
-#
-#     def get_object(self, queryset=None):
-#         if 'category_slug' in self.kwargs:
-#             self.categories = get_object_or_404(Category, slug=self.kwargs['category_slug'])
-#             self.products = Product.objects.all().filter(category=self.categories, is_available=True)
-#         else:
-#             self.products = Product.objects.all().filter(is_available=True)
-#
-#         return self.products
-#
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#
-#         if 'category_slug' in self.kwargs:
-#             self.paginator = Paginator(self.products, 1)
-#             self.paged_products = self.paginator.get_page(self.page)
-#
-#             context['products_count'] = self.products.count()
-#             context['products'] = self.products
-#         else:
-#             self.paginator = Paginator(self.products, 1)
-#             self.paged_products = self.paginator.get_page(self.page)
-#             context['products_count'] = Product.objects.all().filter(is_available=True).count()
-#             context['products'] = self.products
-#
-#         return context
 
 def store(request, category_slug=None):
     if category_slug is not None:
@@ -51,7 +17,7 @@ def store(request, category_slug=None):
         paged_products = paginator.get_page(page)
         products_count = products.count()
     else:
-        products = Product.objects.all().filter(is_available=True)
+        products = Product.objects.all().filter(is_available=True).order_by('id')
         paginator = Paginator(products, 3)
         page = request.GET.get('page')
         paged_products = paginator.get_page(page)
@@ -75,3 +41,24 @@ def show_product_details(request, category_slug, product_slug):
         'is_in_cart': is_in_cart
     }
     return render(request, 'store/product_details.html', context)
+
+
+class SearchView(views.ListView):
+    model = Product
+    template_name = 'store/store.html'
+
+    def get_queryset(self):
+        keyword = self.request.GET.get('keyword')
+        queryset = Product.objects.all()
+        if keyword:
+            queryset = queryset.order_by('-created_date').filter(
+                Q(description__icontains=keyword) | Q(product_name__icontains=keyword)
+            )
+        return queryset
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        if self.object_list:
+            context['products_count'] = self.object_list.count
+            context['products'] = self.object_list
+            return context
