@@ -7,6 +7,9 @@ from e_fish_shop_app.store.models import Product
 
 
 def add_product_to_cart(request, product_pk):
+    color = request.GET['color']
+    size = request.GET['size']
+
     product = Product.objects.filter(pk=product_pk).get()
     try:
         cart = _get_cart(request)
