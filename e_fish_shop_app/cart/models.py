@@ -22,5 +22,5 @@ class CartItem(models.Model):
         """Calculate the total price for an item based on the quantity"""
         return self.product.price * self.quantity
 
-    def __str__(self):
+    def __unicode__(self):
         return self.product
