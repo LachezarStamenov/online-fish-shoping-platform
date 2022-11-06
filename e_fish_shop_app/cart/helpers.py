@@ -11,5 +11,5 @@ def _get_cart_id(request):
 
 def _get_cart(request):
     """Function which return the cart for the given cart_id"""
-    cart = Cart.objects.filter(cart_id=_get_cart_id(request)).get()
+    cart = Cart.objects.get(cart_id=_get_cart_id(request))
     return cart

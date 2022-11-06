@@ -25,10 +25,12 @@ class Product(models.Model):
     def __str__(self):
         return self.product_name
 
+    class Meta:
+        ordering = ['product_name', 'price']
+
 
 class VariationManager(models.Manager):
     """Variation manager class model which help for managing the variation of color and size."""
-
     def colors(self):
         return super(VariationManager, self).filter(variation_category='color', is_active=True)
 
@@ -52,5 +54,9 @@ class Variation(models.Model):
 
     objects = VariationManager()
 
+    class Meta:
+        ordering = ['id']
+
     def __str__(self):
         return self.variation_value
+
