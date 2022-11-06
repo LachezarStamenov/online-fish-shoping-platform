@@ -3,14 +3,24 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 from e_fish_shop_app.cart.helpers import _get_cart_id, _get_cart
 from e_fish_shop_app.cart.models import Cart, CartItem
-from e_fish_shop_app.store.models import Product
+from e_fish_shop_app.store.models import Product, Variation
 
 
 def add_product_to_cart(request, product_pk):
-    color = request.GET['color']
-    size = request.GET['size']
-
     product = Product.objects.filter(pk=product_pk).get()
+    product_variation = []
+    if request.method == 'POST':
+        for item in request.POST:
+            key = item
+            value = request.POST[key]
+
+            try:
+                variation = Variation.objects.get(
+                    product=product, variation_category__iexact=key, variation_value__iexact=value
+                )
+                product_variation.append(variation)
+            except:
+                pass
     try:
         cart = _get_cart(request)
     except Cart.DoesNotExist:
