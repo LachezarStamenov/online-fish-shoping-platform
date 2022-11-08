@@ -3,6 +3,9 @@ from django.db import models
 
 
 class MyAccountManager(BaseUserManager):
+    """
+    Custom manager for users accounts. Overwriting the create_user and create_superuser methods.
+    """
     # normal user
     def create_user(self, first_name, last_name, username, email, password=None):
         if not email:
@@ -40,6 +43,10 @@ class MyAccountManager(BaseUserManager):
 
 # creating an account manager
 class Account(AbstractBaseUser):
+    """
+    Account custom Model for customizing the user fields.
+    Changing the default username field with email.
+    """
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     username = models.CharField(max_length=50, unique=True)
