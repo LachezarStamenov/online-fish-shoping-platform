@@ -34,17 +34,17 @@ class RegistrationForm(BootstrapFormMixin, forms.ModelForm):
 
     def save(self, commit=True):
         username = self.cleaned_data['email'].split("@")[0]
-        profile = Account(
+        user = Account(
             first_name=self.cleaned_data['first_name'],
             last_name=self.cleaned_data['last_name'],
             email=self.cleaned_data['email'],
             password=self.cleaned_data['password'],
             username=username,
         )
-        profile.phone_number = self.cleaned_data['phone_number']
+        user.phone_number = self.cleaned_data['phone_number']
 
         if commit:
-            profile.save()
-        return profile
+            user.save()
+        return user
 
 

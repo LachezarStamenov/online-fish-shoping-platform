@@ -2,35 +2,35 @@
 
 {% block page_content %}
 
-<section class="section-conten padding-y" style="min-height:84vh">
+    <section class="section-conten padding-y" style="min-height:84vh">
 
-	<div class="card mx-auto" style="max-width: 380px; margin-top:100px;">
-      <div class="card-body">
-      <h4 class="card-title mb-4">Sign in</h4>
-      <form>
-          <div class="form-group">
-			 <input type="email" class="form-control" placeholder="Email Address" >
-          </div>
-          <div class="form-group">
-			<input type="password" class="form-control" placeholder="Password" >
-          </div>
+        <div class="card mx-auto" style="max-width: 380px; margin-top:100px;">
+            <div class="card-body">
+                <h4 class="card-title mb-4">Sign in</h4>
+                {% include 'partials/alerts.html' %}
+                <form action="{% url 'login' %}" method="post">
+                    {% csrf_token %}
 
-          <div class="form-group">
-          	<a href="#" class="float-right">Forgot password?</a>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                    </div>
 
-          </div>
-          <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block"> Login  </button>
-          </div>
-      </form>
-      </div>
-    </div>
+                    <div class="form-group">
+                        <a href="#" class="float-right">Forgot password?</a>
 
-     <p class="text-center mt-4">Don't have account? <a href="#">Sign up</a></p>
-     <br><br>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block"> Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-
-
-
+        <p class="text-center mt-4">Don't have account? <a href="{% url 'register' %}">Sign up</a></p>
+        <br><br>
+    </section>
 
 {% endblock %}

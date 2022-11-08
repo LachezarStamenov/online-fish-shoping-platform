@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import generic as views
 from e_fish_shop_app.accounts.forms import RegistrationForm
+from django.contrib import messages, auth
 
 
 class RegistrationView(views.CreateView):
@@ -33,6 +34,18 @@ class RegistrationView(views.CreateView):
 
 
 def login(request):
+    if request.method == 'POST':
+        email = request.POST['email']
+        password = request.POST['password']
+
+        user = auth.authenticate(email=email, password=password)
+        if user is not None:
+            auth.login(request, user)
+            # messages.success(request, 'You are now logged in.')
+            return redirect('home')
+        else:
+            messages.error(request, 'Invalid login credentials.')
+            return redirect('login')
     return render(request, 'accounts/login.html')
 
 
