@@ -3,6 +3,7 @@ from django.urls import reverse_lazy
 from django.views import generic as views
 from e_fish_shop_app.accounts.forms import RegistrationForm
 from django.contrib import messages, auth
+from django.contrib.auth.decorators import login_required
 
 
 class RegistrationView(views.CreateView):
@@ -49,5 +50,11 @@ def login(request):
     return render(request, 'accounts/login.html')
 
 
+@login_required(login_url='login')
 def logout(request):
-    return
+    auth.logout(request)
+    messages.success(request, 'You are logged out.')
+    return redirect('login')
+
+
+
