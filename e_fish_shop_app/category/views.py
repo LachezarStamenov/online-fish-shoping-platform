@@ -3,7 +3,8 @@ from django.urls import reverse_lazy
 from django.views import generic as views
 from e_fish_shop_app.accounts.forms import RegistrationForm
 from django.contrib import messages, auth
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth import views as auth_views
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class RegistrationView(views.CreateView):
@@ -50,11 +51,15 @@ def login(request):
     return render(request, 'accounts/login.html')
 
 
-@login_required(login_url='login')
-def logout(request):
-    auth.logout(request)
-    messages.success(request, 'You are logged out.')
-    return redirect('login')
+# @login_required(login_url='login')
+# def logout(request):
+#     auth.logout(request)
+#     messages.success(request, 'You are logged out.')
+#     return redirect('login')
 
 
+class LogoutView(SuccessMessageMixin, auth_views.LogoutView):
+    template_name = 'accounts/login.html'
 
+    def get_context_data(self, **kwargs):
+        messages.add_message(self.request, messages.INFO, 'You are logged out.')
