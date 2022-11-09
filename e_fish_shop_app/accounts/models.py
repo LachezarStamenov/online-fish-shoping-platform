@@ -1,4 +1,5 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+from django.core.mail import send_mail
 from django.db import models
 
 
@@ -73,3 +74,4 @@ class Account(AbstractBaseUser):
 
     def has_module_perms(self, add_label):
         return True
+

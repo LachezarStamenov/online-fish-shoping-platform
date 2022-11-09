@@ -22,16 +22,6 @@ class RegistrationForm(BootstrapFormMixin, forms.ModelForm):
         model = Account
         fields = ['first_name', 'last_name', 'email', 'phone_number']
 
-    def clean(self):
-        clean_data = super(RegistrationForm, self).clean()
-        password = clean_data.get('password')
-        repeat_password = clean_data.get('repeat_password')
-
-        if not password == repeat_password:
-            raise forms.ValidationError(
-                "Password does not match! Please try again!"
-            )
-
     def save(self, commit=True):
         username = self.cleaned_data['email'].split("@")[0]
         user = Account(
@@ -47,4 +37,13 @@ class RegistrationForm(BootstrapFormMixin, forms.ModelForm):
             user.save()
         return user
 
+    def clean(self):
+        clean_data = super(RegistrationForm, self).clean()
+        password = clean_data.get('password')
+        repeat_password = clean_data.get('repeat_password')
+
+        if not password == repeat_password:
+            raise forms.ValidationError(
+                "Password does not match! Please try again!"
+            )
 

@@ -134,3 +134,8 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
+EMAIL_HOST = 'smtp.abv.bg'
+EMAIL_PORT = 993
+EMAIL_HOST_USER = 'lachezar.stamenov@abv.bg'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
