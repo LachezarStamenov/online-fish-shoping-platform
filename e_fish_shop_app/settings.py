@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from django.contrib.messages import constants as messages
+from django.urls import reverse_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -139,3 +140,5 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'lachezar.stamenov435@gmail.com'
 EMAIL_HOST_PASSWORD = 'lztnittxnxpcdllt'
 EMAIL_USE_TLS = True
+
+LOGIN_REDIRECT_URL = reverse_lazy('index')

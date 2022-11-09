@@ -6,8 +6,8 @@ from django.db import models
 class MyAccountManager(BaseUserManager):
     """
     Custom manager for users accounts. Overwriting the create_user and create_superuser methods.
+    Create normal user and create superuser methods overwritten.
     """
-    # normal user
     def create_user(self, first_name, last_name, username, email, password=None):
         if not email:
             raise ValueError('User must have an email address.')
@@ -26,7 +26,6 @@ class MyAccountManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    # superuser
     def create_superuser(self, first_name, last_name, email, username, password):
         user = self.create_user(
             email=self.normalize_email(email),
@@ -42,11 +41,10 @@ class MyAccountManager(BaseUserManager):
         user.save(using=self._db)
 
 
-# creating an account manager
 class Account(AbstractBaseUser):
     """
-    Account custom Model for customizing the user fields.
-    Changing the default username field with email.
+    class Account which customize the user creation.
+    Changing the default username login with email login.
     """
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)

@@ -44,13 +44,14 @@ def register(request):
             send_email.send()
             # messages.success(request, 'Thank you for registering with us. We have sent you
             # a verification email to your email address [rathan.kumar@gmail.com]. Please verify it.')
-            return redirect('/accounts/login/?command=verification&email='+email)
+            return redirect('/accounts/login/?command=verification&email=' + email)
     else:
         form = RegistrationForm()
     context = {
         'form': form,
     }
     return render(request, 'accounts/register.html', context)
+
 
 def activate(request, uidb64, token):
     try:
@@ -63,7 +64,6 @@ def activate(request, uidb64, token):
         user.is_active = True
         user.save()
         messages.success(request, 'Congratulations! Your account is activated.')
-
         return redirect('login')
     else:
         messages.error(request, 'Invalid activation link')
@@ -75,7 +75,6 @@ class LogoutView(SuccessMessageMixin, auth_views.LogoutView):
 
     def get_context_data(self, **kwargs):
         messages.add_message(self.request, messages.INFO, 'You are logged out.')
-
 
 
 def login(request):
@@ -125,4 +124,4 @@ def forgot_password(request):
 
 
 def reset_password_validate(request):
-    return render(request,'')
+    return render(request, '')

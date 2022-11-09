@@ -1,5 +1,5 @@
 from django import forms
-from e_fish_shop_app.accounts.models import Account
+from django.contrib.auth import get_user_model
 
 
 class RegistrationForm(forms.ModelForm):
@@ -12,7 +12,7 @@ class RegistrationForm(forms.ModelForm):
     }))
 
     class Meta:
-        model = Account
+        model = get_user_model()
         fields = ['first_name', 'last_name', 'phone_number', 'email', 'password']
 
     def clean(self):
