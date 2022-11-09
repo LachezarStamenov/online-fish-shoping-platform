@@ -134,8 +134,8 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-EMAIL_HOST = 'smtp.abv.bg'
-EMAIL_PORT = 993
-EMAIL_HOST_USER = 'lachezar.stamenov@abv.bg'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'lachezar.stamenov435@gmail.com'
+EMAIL_HOST_PASSWORD = 'lztnittxnxpcdllt'
 EMAIL_USE_TLS = True

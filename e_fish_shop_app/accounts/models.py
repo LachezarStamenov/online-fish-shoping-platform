@@ -75,3 +75,5 @@ class Account(AbstractBaseUser):
     def has_module_perms(self, add_label):
         return True
 
+    def email_user(self, subject, message, from_email=None, **kwargs):
+        send_mail(subject, message, from_email, [self.email], **kwargs)
