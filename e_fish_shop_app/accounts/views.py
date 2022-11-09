@@ -30,7 +30,7 @@ def register(request):
             user.phone_number = phone_number
             user.save()
 
-            # USER ACTIVATION
+            # User activation after registration. It sends an e-mail to the user with activation link.
             current_site = get_current_site(request)
             mail_subject = 'Please activate your account'
             message = render_to_string('accounts/account_verification_email.html', {
@@ -42,7 +42,8 @@ def register(request):
             to_email = email
             send_email = EmailMessage(mail_subject, message, to=[to_email])
             send_email.send()
-            # messages.success(request, 'Thank you for registering with us. We have sent you a verification email to your email address [rathan.kumar@gmail.com]. Please verify it.')
+            # messages.success(request, 'Thank you for registering with us. We have sent you
+            # a verification email to your email address [rathan.kumar@gmail.com]. Please verify it.')
             return redirect('/accounts/login/?command=verification&email='+email)
     else:
         form = RegistrationForm()
@@ -94,4 +95,34 @@ def login(request):
 
 
 def dashboard(request):
-    return render(request, 'accounts/dashboard.html')
+    return render(request, 'dashboard.html')
+
+
+def forgot_password(request):
+    if request.method == "POST":
+        email = request.POST['email']
+        if Account.objects.filter(email=email).exists():
+            user = Account.objects.get(email__exact=email)
+            # Reset password email
+            current_site = get_current_site(request)
+            mail_subject = 'Reset Your Password!'
+            message = render_to_string('accounts/reset_password_email.html', {
+                'user': user,
+                'domain': current_site,
+                'uid': urlsafe_base64_encode(force_bytes(user.pk)),
+                'token': default_token_generator.make_token(user),
+            })
+            to_email = email
+            send_email = EmailMessage(mail_subject, message, to=[to_email])
+            send_email.send()
+
+            messages.success(request, 'Password reset email has been sent to your email address.')
+            return redirect('login')
+        else:
+            messages.error(request, 'Account does not exist!')
+            return redirect('forgot password')
+    return render(request, 'accounts/forgot_password.html')
+
+
+def reset_password_validate(request):
+    return render(request,'')
