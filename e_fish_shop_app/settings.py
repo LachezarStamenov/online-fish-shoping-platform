@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'e_fish_shop_app.accounts',
     'e_fish_shop_app.store',
     'e_fish_shop_app.cart',
+    'e_fish_shop_app.orders',
+    
 ]
 
 MIDDLEWARE = [
