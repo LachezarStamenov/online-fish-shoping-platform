@@ -26,10 +26,12 @@ def add_product_to_cart(request, product_pk):
                     pass
 
         is_cart_item_exists = CartItem.objects.filter(product=product, user=current_user).exists()
+
         if is_cart_item_exists:
             cart_item = CartItem.objects.filter(product=product, user=current_user)
             ex_var_list = []
             id = []
+
             for item in cart_item:
                 existing_variation = item.variations.all()
                 ex_var_list.append(list(existing_variation))
@@ -45,6 +47,7 @@ def add_product_to_cart(request, product_pk):
 
             else:
                 item = CartItem.objects.create(product=product, quantity=1, user=current_user)
+
                 if len(product_variation) > 0:
                     item.variations.clear()
                     item.variations.add(*product_variation)
@@ -59,10 +62,13 @@ def add_product_to_cart(request, product_pk):
                 cart_item.variations.clear()
                 cart_item.variations.add(*product_variation)
             cart_item.save()
+
         return redirect('cart')
+
     # if the user is not authenticated
     else:
         product_variation = []  # list with all variations for the fishes(size, color)
+
         if request.method == 'POST':
             for item in request.POST:
                 key = item
