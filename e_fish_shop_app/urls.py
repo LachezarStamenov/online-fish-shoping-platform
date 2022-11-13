@@ -10,5 +10,6 @@ urlpatterns = [
     path('store/', include('e_fish_shop_app.store.urls')),
     path('cart/', include('e_fish_shop_app.cart.urls')),
     path('accounts/', include('e_fish_shop_app.accounts.urls')),
+    path('orders/', include('e_fish_shop_app.orders.urls'))
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
