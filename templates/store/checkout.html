@@ -102,8 +102,9 @@
                                         </td>
                                         <td>
                                             <div class="price-wrap">
-                                                <var class="price">$ {{ cart_item.sub_total }}</var>
-                                                <small class="text-muted"> $ {{ cart_item.product.price }} each </small>
+                                                <var class="price">${{ cart_item.sub_total_price|floatformat:2 }}</var>
+                                                <small class="text-muted"> ${{ cart_item.product.price|floatformat:2 }}
+                                                    each </small>
                                             </div>
                                         </td>
 

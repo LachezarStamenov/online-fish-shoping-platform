@@ -4,6 +4,8 @@ from django.shortcuts import render, redirect
 from django.contrib import messages, auth
 from django.contrib.auth import views as auth_views
 from django.contrib.messages.views import SuccessMessageMixin
+
+
 from e_fish_shop_app.accounts.forms import RegistrationForm
 from e_fish_shop_app.accounts.models import Account
 from django.contrib.sites.shortcuts import get_current_site
@@ -11,10 +13,9 @@ from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
-
 from e_fish_shop_app.cart.helpers import _get_cart
 from e_fish_shop_app.cart.models import CartItem
-
+import requests
 
 def register(request):
     if request.method == 'POST':
@@ -125,7 +126,16 @@ def login(request):
 
             auth.login(request, user)
             messages.success(request, 'You are now logged in.')
-            return redirect('dashboard')
+            url = request.META.get('HTTP_REFERER')
+            try:
+                query = requests.utils.urlparse(url).query
+                params = dict(x.split('=') for x in query.split('&'))
+                if 'next' in params:
+                    next_page = params['next']
+                    return redirect(next_page)
+            except:
+                return redirect('dashboard')
+
         else:
             messages.error(request, 'Invalid login credentials.')
             return redirect('login')
@@ -133,6 +143,7 @@ def login(request):
 
 
 def dashboard(request):
+
     return render(request, 'dashboard.html')
 
 
