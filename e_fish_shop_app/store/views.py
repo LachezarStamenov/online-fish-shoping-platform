@@ -7,18 +7,18 @@ from e_fish_shop_app.category.models import Category
 from e_fish_shop_app.store.models import Product
 from django.views import generic as views
 
-
+NUMBER_OF_PRODUCTS_PER_PAGE = 3
 def store(request, category_slug=None):
     if category_slug is not None:
         categories = get_object_or_404(Category, slug=category_slug)
         products = Product.objects.all().filter(category=categories, is_available=True)
-        paginator = Paginator(products, 3)
+        paginator = Paginator(products, NUMBER_OF_PRODUCTS_PER_PAGE)
         page = request.GET.get('page')
         paged_products = paginator.get_page(page)
         products_count = products.count()
     else:
         products = Product.objects.all().filter(is_available=True).order_by('id')
-        paginator = Paginator(products, 3)
+        paginator = Paginator(products, NUMBER_OF_PRODUCTS_PER_PAGE)
         page = request.GET.get('page')
         paged_products = paginator.get_page(page)
         products_count = products.count()
@@ -30,7 +30,7 @@ def store(request, category_slug=None):
 
 
 def show_product_details(request, category_slug, product_slug):
-    """Show the product details information"""
+    """View showing the product details information."""
     try:
         product = Product.objects.get(category__slug=category_slug, slug=product_slug)
         is_in_cart = CartItem.objects.filter(cart__cart_id=_get_cart_id(request), product=product).exists()
@@ -44,6 +44,11 @@ def show_product_details(request, category_slug, product_slug):
 
 
 class SearchView(views.ListView):
+    """
+    Search class based view for easy searching
+    for specific keyword from the user.
+    """
+
     model = Product
     template_name = 'store/store.html'
 

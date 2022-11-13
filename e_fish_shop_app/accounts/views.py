@@ -12,6 +12,9 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
 
+from e_fish_shop_app.cart.helpers import _get_cart
+from e_fish_shop_app.cart.models import CartItem
+
 
 def register(request):
     if request.method == 'POST':
@@ -84,6 +87,19 @@ def login(request):
 
         user = auth.authenticate(email=email, password=password)
         if user is not None:
+            try:
+                cart = _get_cart(request)
+                is_cart_item_exist = CartItem.objects.filter(cart=cart).exists()
+                if is_cart_item_exist:
+                    cart_item = CartItem.objects.filter(cart=cart)
+                    # assigning the existing cart items to the login user
+                    for item in cart_item:
+                        item.user = user
+                        item.save()
+
+            except:
+                pass
+
             auth.login(request, user)
             messages.success(request, 'You are now logged in.')
             return redirect('dashboard')

@@ -3,13 +3,20 @@ from django.urls import reverse
 
 from e_fish_shop_app.category.models import Category
 
+PRODUCT_MAX_LENGTH = 200
+SLUG_MAX_LENGTH = 200
+DESCRIPTION_MAX_LENGTH = 200
+IMAGES_PATH_UPLOAD_TO = 'photos/products'
+VARIATION_CATEGORY_MAX_LENGTH = 100
+VARIATION_VALUE_MAX_LENGTH = 100
+
 
 class Product(models.Model):
-    product_name = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
-    description = models.TextField(max_length=500, blank=True)
+    product_name = models.CharField(max_length=PRODUCT_MAX_LENGTH, unique=True)
+    slug = models.SlugField(max_length=SLUG_MAX_LENGTH, unique=True)
+    description = models.TextField(max_length=DESCRIPTION_MAX_LENGTH, blank=True)
     price = models.IntegerField()
-    images = models.ImageField(upload_to='photos/products')
+    images = models.ImageField(upload_to=IMAGES_PATH_UPLOAD_TO)
     stock = models.IntegerField()
     is_available = models.BooleanField(default=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -30,7 +37,10 @@ class Product(models.Model):
 
 
 class VariationManager(models.Manager):
-    """Variation manager class model which help for managing the variation of color and size."""
+    """
+    Class Variation manager which help for managing
+    the variation for color and size.
+    """
     def colors(self):
         return super(VariationManager, self).filter(variation_category='color', is_active=True)
 
@@ -45,10 +55,12 @@ variation_category_choice = (
 
 
 class Variation(models.Model):
-    """Variation model for making dynamic fish size and color choice."""
+    """
+    Variation model for making dynamic fish size and color choice.
+    """
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    variation_category = models.CharField(max_length=100, choices=variation_category_choice)
-    variation_value = models.CharField(max_length=100)
+    variation_category = models.CharField(max_length=VARIATION_CATEGORY_MAX_LENGTH, choices=variation_category_choice)
+    variation_value = models.CharField(max_length=VARIATION_VALUE_MAX_LENGTH)
     is_active = models.BooleanField(default=True)
     created_date = models.DateTimeField(auto_now=True)
 
