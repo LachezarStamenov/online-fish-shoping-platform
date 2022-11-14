@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
+from django.utils.html import format_html
 
-from e_fish_shop_app.accounts.models import Account
+from e_fish_shop_app.accounts.models import Account, UserProfile
 
 
 @admin.register(Account)
@@ -15,3 +16,9 @@ class AccountAdmin(UserAdmin):
     fieldsets = ()
 
 
+@admin.register(UserProfile)
+class UserProfileAdmin(UserAdmin):
+    def thumbnail(self, object):
+        return format_html('<img src="{}" width="30" style="border-radius:50%;">'.format(object.profile_picture.url))
+    thumbnail.short_description = 'Profile Picture'
+    list_display = ('thumbnail', 'user', 'city', 'country')
