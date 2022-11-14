@@ -1,10 +1,11 @@
+from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMessage
 from django.shortcuts import render, redirect
 
 from django.contrib import messages, auth
 from django.contrib.auth import views as auth_views
 from django.contrib.messages.views import SuccessMessageMixin
-
+from django.views.generic import View
 
 from e_fish_shop_app.accounts.forms import RegistrationForm
 from e_fish_shop_app.accounts.models import Account
@@ -16,6 +17,9 @@ from django.contrib.auth.tokens import default_token_generator
 from e_fish_shop_app.cart.helpers import _get_cart
 from e_fish_shop_app.cart.models import CartItem
 import requests
+
+from e_fish_shop_app.orders.models import Order
+
 
 def register(request):
     if request.method == 'POST':
@@ -143,9 +147,15 @@ def login(request):
     return render(request, 'accounts/login.html')
 
 
+@login_required(login_url='login')
 def dashboard(request):
+    orders = Order.objects.order_by('-created_at').filter(user_id=request.user.id, is_ordered=True)
+    orders_count = orders.count()
 
-    return render(request, 'dashboard.html')
+    context = {
+        'orders_count': orders_count,
+    }
+    return render(request, 'dashboard.html', context)
 
 
 def forgot_password(request):
@@ -207,3 +217,12 @@ def reset_password(request):
     else:
 
         return render(request, 'accounts/reset_password.html')
+
+
+@login_required(login_url='login')
+def my_orders(request):
+    orders = Order.objects.filter(user=request.user, is_ordered=True).order_by('-created_at')
+    context = {
+        'orders': orders,
+    }
+    return render(request, 'accounts/my_orders.html', context)
