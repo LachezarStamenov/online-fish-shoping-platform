@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.contrib.admin import ModelAdmin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.html import format_html
 
@@ -17,7 +18,7 @@ class AccountAdmin(UserAdmin):
 
 
 @admin.register(UserProfile)
-class UserProfileAdmin(UserAdmin):
+class UserProfileAdmin(ModelAdmin):
     def thumbnail(self, object):
         return format_html('<img src="{}" width="30" style="border-radius:50%;">'.format(object.profile_picture.url))
     thumbnail.short_description = 'Profile Picture'
