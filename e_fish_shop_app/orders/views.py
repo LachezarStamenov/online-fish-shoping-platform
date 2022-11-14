@@ -6,6 +6,10 @@ from e_fish_shop_app.cart.models import CartItem
 from e_fish_shop_app.orders.forms import OrderForm
 from e_fish_shop_app.orders.models import Order
 
+def payments(request):
+    """ Payment functionality is not included in the current platform """
+    return render(request, 'orders/payments.html')
+
 
 def place_order(request, total=0, quantity=0):
     current_user = request.user
@@ -61,7 +65,7 @@ def place_order(request, total=0, quantity=0):
                 'grand_total': grand_total,
             }
 
-            return redirect('checkout')
+            return render(request, 'orders/payments.html', context)
     else:
         return redirect('checkout')
 

@@ -17,7 +17,6 @@ def add_product_to_cart(request, product_pk):
             for item in request.POST:
                 key = item
                 value = request.POST[key]
-
                 try:
                     variation = Variation.objects.get(product=product, variation_category__iexact=key,
                                                       variation_value__iexact=value)
@@ -44,10 +43,8 @@ def add_product_to_cart(request, product_pk):
                 item = CartItem.objects.get(product=product, id=item_id)
                 item.quantity += 1
                 item.save()
-
             else:
                 item = CartItem.objects.create(product=product, quantity=1, user=current_user)
-
                 if len(product_variation) > 0:
                     item.variations.clear()
                     item.variations.add(*product_variation)
