@@ -38,6 +38,12 @@ def register(request):
             user.phone_number = phone_number
             user.save()
 
+            # Creating user profile
+            profile = UserProfile()
+            profile.user_id = user.id
+            profile.profile_picture = 'default/default-user.png'
+            profile.save()
+
             # User activation after registration. It sends an e-mail to the user with activation link.
             current_site = get_current_site(request)
             mail_subject = 'Please activate your account'
@@ -251,3 +257,29 @@ def edit_profile(request):
         'userprofile': userprofile,
     }
     return render(request, 'accounts/edit_profile.html', context)
+
+
+@login_required(login_url='login')
+def change_password(request):
+    if request.method == 'POST':
+        current_password = request.POST['current_password']
+        new_password = request.POST['new_password']
+        confirm_password = request.POST['confirm_password']
+
+        user = Account.objects.get(username__exact=request.user.username)
+
+        if new_password == confirm_password:
+            success = user.check_password(current_password)
+            if success:
+                user.set_password(new_password)
+                user.save()
+                # auth.logout(request)
+                messages.success(request, 'Password updated successfully.')
+                return redirect('change password')
+            else:
+                messages.error(request, 'Please enter valid current password')
+                return redirect('change password')
+        else:
+            messages.error(request, 'Password does not match!')
+            return redirect('change password')
+    return render(request, 'accounts/change_password.html')
