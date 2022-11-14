@@ -95,6 +95,7 @@ def login(request):
                     cart_item = CartItem.objects.filter(cart=cart)
                     # getting product variation by cart_id
                     product_variation = []
+
                     for item in cart_item:
                         variation = item.variations.all()
                         product_variation.append(list(variation))
