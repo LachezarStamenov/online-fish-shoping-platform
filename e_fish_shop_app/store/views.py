@@ -29,18 +29,35 @@ def store(request, category_slug=None):
     return render(request, 'store/store.html', context)
 
 
-def show_product_details(request, category_slug, product_slug):
-    """View showing the product details information."""
-    try:
-        product = Product.objects.get(category__slug=category_slug, slug=product_slug)
-        is_in_cart = CartItem.objects.filter(cart__cart_id=_get_cart_id(request), product=product).exists()
-    except Exception as ex:
-        raise ex
-    context = {
-        'product': product,
-        'is_in_cart': is_in_cart
-    }
-    return render(request, 'store/product_details.html', context)
+# def show_product_details(request, category_slug, product_slug):
+#     """View showing the product details information."""
+#     try:
+#         product = Product.objects.get(category__slug=category_slug, slug=product_slug)
+#         is_in_cart = CartItem.objects.filter(cart__cart_id=_get_cart_id(request), product=product).exists()
+#     except Exception as ex:
+#         raise ex
+#     context = {
+#         'product': product,
+#         'is_in_cart': is_in_cart
+#     }
+#     return render(request, 'store/product_details.html', context)
+class ProductDetailsView(views.View):
+    """
+    Class based view for rendering the product details information page.
+    """
+    def get(self, *args, **kwargs):
+        product_slug = self.kwargs.get('product_slug')
+        category_slug = self.kwargs.get('category_slug')
+        try:
+            product = Product.objects.get(category__slug=category_slug, slug=product_slug)
+            is_in_cart = CartItem.objects.filter(cart__cart_id=_get_cart_id(self.request), product=product).exists()
+        except Exception as ex:
+            raise ex
+        context = {
+            'product': product,
+            'is_in_cart': is_in_cart
+        }
+        return render(self.request, 'store/product_details.html', context)
 
 
 class SearchView(views.ListView):
