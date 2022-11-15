@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from e_fish_shop_app.store.models import Product, Variation
+from e_fish_shop_app.store.models import Product, Variation, ReviewRating
 
 
 @admin.register(Product)
@@ -15,3 +15,8 @@ class VariationAdmin(admin.ModelAdmin):
     list_editable = ('is_active',)  # make the check button be active in admin
     list_filter = ('product', 'variation_category', 'variation_value')  # make a filtering able in admin for these
     # fields
+
+
+@admin.register(ReviewRating)
+class ReviewRatingAdmin(admin.ModelAdmin):
+    pass

@@ -1,6 +1,8 @@
 from django.db import models
+from django.db.models import Avg, Count
 from django.urls import reverse
 
+from e_fish_shop_app.accounts.models import Account
 from e_fish_shop_app.category.models import Category
 
 PRODUCT_MAX_LENGTH = 200
@@ -10,6 +12,9 @@ IMAGES_PATH_UPLOAD_TO = 'photos/products'
 VARIATION_CATEGORY_MAX_LENGTH = 100
 VARIATION_VALUE_MAX_LENGTH = 100
 
+SUBJECT_MAX_LENGTH = 100
+REVIEW_MAX_LENGTH = 500
+IP_MAX_LENGTH = 20
 
 class Product(models.Model):
     product_name = models.CharField(max_length=PRODUCT_MAX_LENGTH, unique=True)
@@ -28,6 +33,20 @@ class Product(models.Model):
         view name, category slug and product slug
         """
         return reverse('show product details', args=[self.category.slug, self.slug])
+
+    def average_review(self):
+        reviews = ReviewRating.objects.filter(product=self, status=True).aggregate(average=Avg('rating'))
+        avg = 0
+        if reviews['average'] is not None:
+            avg = float(reviews['average'])
+        return avg
+
+    def count_review(self):
+        reviews = ReviewRating.objects.filter(product=self, status=True).aggregate(count=Count('id'))
+        count = 0
+        if reviews['count'] is not None:
+            count = int(reviews['count'])
+        return count
 
     def __str__(self):
         return self.product_name
@@ -71,4 +90,19 @@ class Variation(models.Model):
 
     def __str__(self):
         return self.variation_value
+
+
+class ReviewRating(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    user = models.ForeignKey(Account, on_delete=models.CASCADE)
+    subject = models.CharField(max_length=SUBJECT_MAX_LENGTH, blank=True)
+    review = models.TextField(max_length=REVIEW_MAX_LENGTH, blank=True)
+    rating = models.FloatField()
+    ip = models.CharField(max_length=IP_MAX_LENGTH, blank=True)
+    status = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.subject
 
