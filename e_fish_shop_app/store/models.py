@@ -16,6 +16,10 @@ SUBJECT_MAX_LENGTH = 100
 REVIEW_MAX_LENGTH = 500
 IP_MAX_LENGTH = 20
 
+PRODUCT_IMAGE_MAX_LENGTH = 255
+PRODUCT_IMAGE_UPLOAD_DIR = 'store/products'
+
+
 class Product(models.Model):
     product_name = models.CharField(max_length=PRODUCT_MAX_LENGTH, unique=True)
     slug = models.SlugField(max_length=SLUG_MAX_LENGTH, unique=True)
@@ -106,3 +110,16 @@ class ReviewRating(models.Model):
     def __str__(self):
         return self.subject
 
+
+class ProductGallery(models.Model):
+    """Product Gallery model for creating unlimited fish images"""
+
+    product = models.ForeignKey(Product, default=None, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to=PRODUCT_IMAGE_UPLOAD_DIR, max_length=PRODUCT_IMAGE_MAX_LENGTH)
+
+    def __str__(self):
+        return self.product.product_name
+
+    class Meta:
+        verbose_name = 'product gallery'
+        verbose_name_plural = 'product gallery'
