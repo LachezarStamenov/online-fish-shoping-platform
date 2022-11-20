@@ -1,13 +1,32 @@
 {% if messages %}
 
     {% for message in messages %}
-    <div id="message" class="container">
-    <div {% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %} role="alert">
-      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
-        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error: {% endif %}
-        {{ message }}
-    </div>
-    </div>
+        <div id="message" class="container">
+            <div {% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %} role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span>
+                </button>
+                {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error: {% endif %}
+                {{ message }}
+            </div>
+        </div>
     {% endfor %}
 
 {% endif %}
+
+{% if form.errors %}
+    <div class="alert alert-error">
+        <h4>Please fix the following errors</h4>
+        <ul>
+        {% for field in form %}
+          {% if field.errors %}
+            {% for error in field.errors %}
+              <li><a href="#id_{{ field.name }}" class="alert-danger" >{{ error|escape }}</a></li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% if form.non_field_errors %}
+        {{ form.non_field_errors|escape }}
+      {% endif %}
+    </div>
+  {% endif %}

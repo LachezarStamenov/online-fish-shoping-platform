@@ -1,6 +1,9 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 from django.core.mail import send_mail
+from django.core.validators import MinLengthValidator, MinValueValidator
 from django.db import models
+
+from e_fish_shop_app.core.validators import only_letter_numbers_and_underscore_validator
 
 FIRST_NAME_MAX_LENGTH = 50
 LAST_NAME_MAX_LENGTH = 50
@@ -59,9 +62,24 @@ class Account(AbstractBaseUser):
     class Account which customize the user creation.
     Changing the default username login with email login.
     """
-    first_name = models.CharField(max_length=FIRST_NAME_MAX_LENGTH)
-    last_name = models.CharField(max_length=LAST_NAME_MAX_LENGTH)
-    username = models.CharField(max_length=USERNAME_NAME_MAX_LENGTH, unique=True)
+    first_name = models.CharField(
+        max_length=FIRST_NAME_MAX_LENGTH, validators=(
+            MinLengthValidator(2),
+            only_letter_numbers_and_underscore_validator
+        )
+    )
+    last_name = models.CharField(
+        max_length=LAST_NAME_MAX_LENGTH, validators=(
+            MinLengthValidator(2),
+            only_letter_numbers_and_underscore_validator
+        )
+    )
+    username = models.CharField(
+        max_length=USERNAME_NAME_MAX_LENGTH,
+        unique=True,
+        validators=(MinLengthValidator(0),
+                    )
+    )
     email = models.EmailField(max_length=EMAIL_NAME_MAX_LENGTH, unique=True)
     phone_number = models.CharField(max_length=PHONE_NUMBER_NAME_MAX_LENGTH)
 
