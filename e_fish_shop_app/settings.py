@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'admin_honeypot',
 
     'e_fish_shop_app.fish_shop',
     'e_fish_shop_app.category',
