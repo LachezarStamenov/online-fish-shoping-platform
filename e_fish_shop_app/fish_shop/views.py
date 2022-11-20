@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-from e_fish_shop_app.store.models import Product
+from e_fish_shop_app.store.models import Product, ReviewRating
 
 
 # def home(request):
@@ -16,5 +16,10 @@ class HomeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['products'] = Product.objects.all().filter(is_available=True)
+        products = Product.objects.all().filter(is_available=True).order_by('-created_date')
+        for product in products:
+            reviews = ReviewRating.objects.filter(product_id=product.id, status=True)
+        context['products'] = products
+        context['reviews'] = reviews
+
         return context

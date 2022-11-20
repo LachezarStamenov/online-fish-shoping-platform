@@ -7,7 +7,7 @@ from e_fish_shop_app.cart.models import CartItem
 from e_fish_shop_app.category.models import Category
 from e_fish_shop_app.orders.models import OrderProduct
 from e_fish_shop_app.store.forms import ReviewForm
-from e_fish_shop_app.store.models import Product, ReviewRating
+from e_fish_shop_app.store.models import Product, ReviewRating, ProductGallery
 from django.views import generic as views
 
 NUMBER_OF_PRODUCTS_PER_PAGE = 3
@@ -57,11 +57,15 @@ class ProductDetailsView(views.View):
         # Get the reviews
         reviews = ReviewRating.objects.filter(product_id=product.id, status=True)
 
+        # Get the product Gallery
+        product_gallery = ProductGallery.objects.filter(product_id=product.id)
+
         context = {
             'product': product,
             'is_in_cart': is_in_cart,
             'ordered_product': ordered_product,
             'reviews': reviews,
+            'product_gallery': product_gallery,
         }
         return render(self.request, 'store/product_details.html', context)
 
