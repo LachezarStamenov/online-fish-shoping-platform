@@ -14,6 +14,7 @@ class Cart(models.Model):
 
 
 class CartItem(models.Model):
+    """Cart items model which keep information for the item details within the cart"""
     user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     variations = models.ManyToManyField(Variation, blank=True)
@@ -21,8 +22,11 @@ class CartItem(models.Model):
     quantity = models.IntegerField()
     is_active = models.BooleanField(default=True)
 
+    class Meta:
+        ordering = ('product',)
+
     def sub_total_price(self):
-        """Calculate the total price for an item based on the quantity"""
+        """Return calculation of total price for an item based on the quantity"""
         return self.product.price * self.quantity
 
     def __unicode__(self):

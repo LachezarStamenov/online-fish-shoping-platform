@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.urls import path
 
 from e_fish_shop_app.accounts.views import login, LogoutView, activate, register, forgot_password, \
-    reset_password, reset_password_validate, dashboard, my_orders, edit_profile, change_password
+    reset_password, reset_password_validate, dashboard, edit_profile, change_password, MyOrdersView
 
 urlpatterns = (
     path('register/', register, name='register'),
@@ -16,7 +16,7 @@ urlpatterns = (
     path('resetpassword_validate/<uidb64>/<token>/', reset_password_validate, name='reset password validate'),
     path('resetpassword/', reset_password, name='reset password'),
 
-    path('my_orders/', my_orders, name='may orders'),
+    path('my_orders/', login_required(MyOrdersView.as_view()), name='may orders'),
     path('edit_profile/', edit_profile, name='edit profile'),
     path('change_password/', change_password, name='change password'),
 )

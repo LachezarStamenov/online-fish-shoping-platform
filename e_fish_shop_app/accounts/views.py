@@ -5,8 +5,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages, auth
 from django.contrib.auth import views as auth_views
 from django.contrib.messages.views import SuccessMessageMixin
-from django.views.generic import View, UpdateView
-
 from e_fish_shop_app.accounts.forms import RegistrationForm, UserForm, UserProfileForm
 from e_fish_shop_app.accounts.models import Account, UserProfile
 from django.contrib.sites.shortcuts import get_current_site
@@ -17,9 +15,8 @@ from django.contrib.auth.tokens import default_token_generator
 from e_fish_shop_app.cart.helpers import _get_cart
 from e_fish_shop_app.cart.models import CartItem
 import requests
-
 from e_fish_shop_app.orders.models import Order
-
+from django.views import generic as views
 
 def register(request):
     if request.method == 'POST':
@@ -228,13 +225,14 @@ def reset_password(request):
         return render(request, 'accounts/reset_password.html')
 
 
-@login_required(login_url='login')
-def my_orders(request):
-    orders = Order.objects.filter(user=request.user, is_ordered=True).order_by('-created_at')
-    context = {
-        'orders': orders,
-    }
-    return render(request, 'accounts/my_orders.html', context)
+class MyOrdersView(views.ListView):
+    model = Order
+    template_name = 'accounts/my_orders.html'
+
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context['orders'] = Order.objects.filter(user=self.request.user, is_ordered=True).order_by('-created_at')
+        return context
 
 
 @login_required(login_url='login')

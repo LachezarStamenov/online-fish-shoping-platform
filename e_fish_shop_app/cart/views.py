@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from e_fish_shop_app.cart.helpers import _get_cart, _get_cart_id
 from e_fish_shop_app.cart.models import Cart, CartItem
 from e_fish_shop_app.store.models import Product, Variation
-
+from django.views import generic as views
 
 def add_product_to_cart(request, product_pk):
     current_user = request.user
@@ -64,7 +64,8 @@ def add_product_to_cart(request, product_pk):
 
     # if the user is not authenticated
     else:
-        product_variation = []  # list with all variations for the fishes(size, color)
+        product_variation = []
+        # list with all variations for the fishes(size, color)
 
         if request.method == 'POST':
             for item in request.POST:
@@ -134,16 +135,18 @@ def remove_product_from_cart(request, product_pk, cart_item_pk):
     return redirect('cart')
 
 
-def remove_cart_item(request, product_pk, cart_item_pk):
-
-    product = get_object_or_404(Product, pk=product_pk)
-    if request.user.is_authenticated:
-        cart_item = CartItem.objects.get(product=product, user=request.user, pk=cart_item_pk)
-    else:
-        cart = _get_cart(request)
-        cart_item = CartItem.objects.get(product=product, cart=cart, pk=cart_item_pk)
-    cart_item.delete()
-    return redirect('cart')
+class RemoveCartItemView(views.View):
+    def get(self, *args, **kwargs):
+        product_pk = self.kwargs.get('product_pk')
+        cart_item_pk = self.kwargs.get('cart_item_pk')
+        product = get_object_or_404(Product, pk=product_pk)
+        if self.request.user.is_authenticated:
+            cart_item = CartItem.objects.get(product=product, user=self.request.user, pk=cart_item_pk)
+        else:
+            cart = _get_cart(self.request)
+            cart_item = CartItem.objects.get(product=product, cart=cart, pk=cart_item_pk)
+        cart_item.delete()
+        return redirect('cart')
 
 
 def cart(request, total_price=0, quantity=0, cart_items=None):

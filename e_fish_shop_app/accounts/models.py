@@ -113,6 +113,7 @@ class Account(AbstractBaseUser):
 
 
 class UserProfile(models.Model):
+    """Model for creating User profile"""
     user = models.OneToOneField(Account, on_delete=models.CASCADE)
     address_line_1 = models.CharField(blank=True, max_length=ADDRESS_1_MAX_LENGTH)
     address_line_2 = models.CharField(blank=True, max_length=ADDRESS_2_MAX_LENGTH)

@@ -1,10 +1,10 @@
 import datetime
 
 from django.shortcuts import render, redirect
-
 from e_fish_shop_app.cart.models import CartItem
 from e_fish_shop_app.orders.forms import OrderForm
 from e_fish_shop_app.orders.models import Order
+
 
 def payments(request):
     """ Payment functionality is not included in the current platform """
@@ -30,7 +30,6 @@ def place_order(request, total=0, quantity=0):
     if request.method == 'POST':
         form = OrderForm(request.POST)
         if form.is_valid():
-
             data = Order()
             data.user = current_user
             data.first_name = form.cleaned_data['first_name']
@@ -68,5 +67,3 @@ def place_order(request, total=0, quantity=0):
             return render(request, 'orders/payments.html', context)
     else:
         return redirect('checkout')
-
-

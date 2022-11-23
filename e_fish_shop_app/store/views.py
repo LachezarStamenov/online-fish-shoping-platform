@@ -75,7 +75,6 @@ class SearchView(views.ListView):
     Search class based view for easy searching
     for specific keyword from the user.
     """
-
     model = Product
     template_name = 'store/store.html'
 
@@ -98,7 +97,9 @@ class SearchView(views.ListView):
 
 
 def submit_review(request, product_pk):
-    url = request.META.get('HTTP_REFERER')  # taking current url and save it to url variable
+    # get current url and save it to url variable
+    url = request.META.get('HTTP_REFERER')
+
     if request.method == 'POST':
         try:
             reviews = ReviewRating.objects.get(user__id=request.user.id, product__id=product_pk)
