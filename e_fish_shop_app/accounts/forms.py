@@ -45,7 +45,6 @@ class UserForm(BootstrapFormMixin, forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(UserForm, self).__init__(*args, **kwargs)
-        # self._init_bootstrap_form_controls()
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'form-control'
 

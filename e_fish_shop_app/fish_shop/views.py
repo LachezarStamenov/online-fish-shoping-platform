@@ -12,7 +12,7 @@ class HomeView(TemplateView):
         products = Product.objects.all().filter(is_available=True).order_by('-created_date')
         for product in products:
             reviews = ReviewRating.objects.filter(product_id=product.id, status=True)
-        context['products'] = products
+        context['products'] = products[:8]
         context['reviews'] = reviews
 
         return context

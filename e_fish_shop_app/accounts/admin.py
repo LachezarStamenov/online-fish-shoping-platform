@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.contrib.admin import ModelAdmin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.html import format_html
+from django.contrib.auth.admin import GroupAdmin as BaseGroupAdmin
 
 from e_fish_shop_app.accounts.models import Account, UserProfile
 
@@ -12,12 +13,12 @@ class AccountAdmin(UserAdmin):
     list_display_links = ('email', 'first_name', 'last_name')
     readonly_fields = ('last_login', 'date_joined')
     ordering = ('-date_joined', )
-    filter_horizontal = ()
-    list_filter = ('is_staff', 'is_active')
+    filter_horizontal = ('groups', 'user_permissions',)
+    list_filter = ('groups', 'is_staff', 'is_active')
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
         ('Personal info', {'fields': ('first_name', 'last_name',)}),
-        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        ('Permissions', {'fields': ('is_admin', 'is_active', 'is_staff', 'is_superadmin', 'groups')}),
         ('Important dates', {'fields': ('last_login', 'date_joined')}),
                  )
 

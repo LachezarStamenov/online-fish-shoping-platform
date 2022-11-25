@@ -10,7 +10,7 @@ from e_fish_shop_app.store.forms import ReviewForm
 from e_fish_shop_app.store.models import Product, ReviewRating, ProductGallery
 from django.views import generic as views
 
-NUMBER_OF_PRODUCTS_PER_PAGE = 3
+NUMBER_OF_PRODUCTS_PER_PAGE = 6
 
 def store(request, category_slug=None):
     if category_slug is not None:

@@ -1,8 +1,9 @@
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
-from django.contrib.auth.models import PermissionsMixin
+from django.contrib.auth.models import PermissionsMixin, _user_has_perm, _user_has_module_perms
 from django.core.mail import send_mail
-from django.core.validators import MinLengthValidator, MinValueValidator
+from django.core.validators import MinLengthValidator
 from django.db import models
+from django.utils.itercompat import is_iterable
 
 from e_fish_shop_app.core.validators import only_letter_numbers_and_underscore_validator
 
@@ -100,10 +101,20 @@ class Account(AbstractBaseUser, PermissionsMixin):
         return self.email
 
     def has_perm(self, perm, obj=None):
-        return self.is_admin
+        if self.is_active and self.is_admin:
+            return True
+        return _user_has_perm(self, perm, obj)
 
-    def has_module_perms(self, add_label):
-        return True
+    def has_perms(self, perm_list, obj=None):
+        if not is_iterable(perm_list) or isinstance(perm_list, str):
+            raise ValueError("perm_list must be an iterable of permissions.")
+        return all(self.has_perm(perm, obj) for perm in perm_list)
+
+    def has_module_perms(self, app_label):
+        if self.is_active and self.is_superadmin:
+            return True
+
+        return _user_has_module_perms(self, app_label)
 
     def email_user(self, subject, message, from_email=None, **kwargs):
         send_mail(subject, message, from_email, [self.email], **kwargs)
