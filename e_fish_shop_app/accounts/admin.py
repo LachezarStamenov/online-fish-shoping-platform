@@ -14,7 +14,12 @@ class AccountAdmin(UserAdmin):
     ordering = ('-date_joined', )
     filter_horizontal = ()
     list_filter = ('is_staff', 'is_active')
-    fieldsets = ()
+    fieldsets = (
+        (None, {'fields': ('email', 'password')}),
+        ('Personal info', {'fields': ('first_name', 'last_name',)}),
+        ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        ('Important dates', {'fields': ('last_login', 'date_joined')}),
+                 )
 
 
 @admin.register(UserProfile)
