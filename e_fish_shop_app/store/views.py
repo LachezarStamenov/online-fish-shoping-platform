@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.shortcuts import render, get_object_or_404, redirect
-from e_fish_shop_app.cart.helpers import _get_cart_id
+from e_fish_shop_app.cart.utils import _get_cart_id
 from e_fish_shop_app.cart.models import CartItem
 from e_fish_shop_app.category.models import Category
 from e_fish_shop_app.orders.models import OrderProduct
@@ -11,6 +11,7 @@ from e_fish_shop_app.store.models import Product, ReviewRating, ProductGallery
 from django.views import generic as views
 
 NUMBER_OF_PRODUCTS_PER_PAGE = 6
+
 
 def store(request, category_slug=None):
     if category_slug is not None:

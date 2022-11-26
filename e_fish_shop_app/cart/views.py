@@ -2,28 +2,19 @@ from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import render, redirect, get_object_or_404
 
-from e_fish_shop_app.cart.helpers import _get_cart, _get_cart_id
+from e_fish_shop_app.cart.utils import _get_cart, _get_cart_id, get_product_variation
 from e_fish_shop_app.cart.models import Cart, CartItem
-from e_fish_shop_app.store.models import Product, Variation
+from e_fish_shop_app.store.models import Product
 from django.views import generic as views
+
 
 def add_product_to_cart(request, product_pk):
     current_user = request.user
-    product = Product.objects.get(id=product_pk)  # get the product
+    product = Product.objects.get(id=product_pk)
+
     # If the user is authenticated
     if current_user.is_authenticated:
-        product_variation = []
-        if request.method == 'POST':
-            for item in request.POST:
-                key = item
-                value = request.POST[key]
-                try:
-                    variation = Variation.objects.get(product=product, variation_category__iexact=key,
-                                                      variation_value__iexact=value)
-                    product_variation.append(variation)
-                except:
-                    pass
-
+        product_variation = get_product_variation(request, product)
         is_cart_item_exists = CartItem.objects.filter(product=product, user=current_user).exists()
 
         if is_cart_item_exists:
@@ -64,20 +55,8 @@ def add_product_to_cart(request, product_pk):
 
     # if the user is not authenticated
     else:
-        product_variation = []
-        # list with all variations for the fishes(size, color)
+        product_variation = get_product_variation(request, product)
 
-        if request.method == 'POST':
-            for item in request.POST:
-                key = item
-                value = request.POST[key]
-                try:
-                    variation = Variation.objects.get(
-                        product=product, variation_category__iexact=key, variation_value__iexact=value
-                    )
-                    product_variation.append(variation)
-                except:
-                    pass
         try:
             cart = _get_cart(request)
         except Cart.DoesNotExist:
@@ -106,7 +85,6 @@ def add_product_to_cart(request, product_pk):
                     item.variations.clear()
                     item.variations.add(*product_variation)
                 item.save()
-
         else:
             cart_item = CartItem.objects.create(product=product, quantity=1, cart=cart)
             if len(product_variation) > 0:

@@ -2,11 +2,18 @@ from django.core.validators import MinLengthValidator
 from django.db import models
 from django.urls import reverse
 
+CATEGORY_NAME_MAX_LENGTH = 40
+SLUG_MAX_LENGTH = 100
+DESCRIPTION_MAX_LENGTH = 255
+
 
 class Category(models.Model):
-    category_name = models.CharField(max_length=40, unique=True, validators=(MinLengthValidator(2),))
-    slug = models.SlugField(max_length=100, unique=True)
-    description = models.TextField(max_length=255, blank=True)
+    category_name = models.CharField(
+        max_length=CATEGORY_NAME_MAX_LENGTH,
+        unique=True, validators=(MinLengthValidator(2),)
+    )
+    slug = models.SlugField(max_length=SLUG_MAX_LENGTH, unique=True)
+    description = models.TextField(max_length=DESCRIPTION_MAX_LENGTH, blank=True)
     category_image = models.ImageField(upload_to='photos/categories', blank=True)
 
     class Meta:

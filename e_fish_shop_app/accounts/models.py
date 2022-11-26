@@ -25,7 +25,6 @@ class MyAccountManager(BaseUserManager):
     Custom manager for users accounts. Overwriting the create_user and create_superuser methods.
     Create normal user and create superuser methods overwritten.
     """
-
     def create_user(self, first_name, last_name, username, email, password=None):
         if not email:
             raise ValueError('User must have an email address.')

@@ -4,9 +4,11 @@ from django.db import models
 from e_fish_shop_app.accounts.models import Account
 from e_fish_shop_app.store.models import Product, Variation
 
+CARD_ID_MAX_LENGTH = 200
+
 
 class Cart(models.Model):
-    cart_id = models.CharField(max_length=200, blank=True)
+    cart_id = models.CharField(max_length=CARD_ID_MAX_LENGTH, blank=True)
     date_added = models.DateField(auto_now_add=True)
 
     def __str__(self):

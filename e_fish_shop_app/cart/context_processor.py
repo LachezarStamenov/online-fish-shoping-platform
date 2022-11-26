@@ -1,4 +1,4 @@
-from e_fish_shop_app.cart.helpers import _get_cart_id
+from e_fish_shop_app.cart.utils import _get_cart_id
 from e_fish_shop_app.cart.models import CartItem, Cart
 
 

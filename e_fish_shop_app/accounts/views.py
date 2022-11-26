@@ -3,7 +3,7 @@ from django.core.mail import EmailMessage
 from django.shortcuts import render, redirect, get_object_or_404
 
 from django.contrib import messages, auth
-from django.contrib.auth import views as auth_views
+from django.contrib.auth import views as auth_views, get_user_model
 from django.contrib.messages.views import SuccessMessageMixin
 from e_fish_shop_app.accounts.forms import RegistrationForm, UserForm, UserProfileForm
 from e_fish_shop_app.accounts.models import Account, UserProfile
@@ -12,11 +12,15 @@ from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
-from e_fish_shop_app.cart.helpers import _get_cart
+from e_fish_shop_app.cart.utils import _get_cart
 from e_fish_shop_app.cart.models import CartItem
 import requests
 from e_fish_shop_app.orders.models import Order
 from django.views import generic as views
+
+
+UserModel = get_user_model()
+
 
 def register(request):
     if request.method == 'POST':
@@ -29,8 +33,11 @@ def register(request):
             password = form.cleaned_data['password']
             username = email.split("@")[0]
             user = Account.objects.create_user(
-                first_name=first_name, last_name=last_name, email=email,
-                username=username, password=password
+                first_name=first_name,
+                last_name=last_name,
+                email=email,
+                username=username,
+                password=password
             )
             user.phone_number = phone_number
             user.save()
@@ -67,8 +74,8 @@ def register(request):
 def activate(request, uidb64, token):
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
-        user = Account.objects.get(pk=uid)
-    except(TypeError, ValueError, OverflowError, Account.DoesNotExist):
+        user = UserModel.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, UserModel.DoesNotExist):
         user = None
 
     if user is not None and default_token_generator.check_token(user, token):
@@ -167,17 +174,20 @@ def dashboard(request):
 def forgot_password(request):
     if request.method == 'POST':
         email = request.POST['email']
-        if Account.objects.filter(email=email).exists():
-            user = Account.objects.get(email__exact=email)
+        if UserModel.objects.filter(email=email).exists():
+            user = UserModel.objects.get(email__exact=email)
             # Reset password email
             current_site = get_current_site(request)
             mail_subject = 'Reset Your Password!'
-            message = render_to_string('accounts/reset_password_email.html', {
-                'user': user,
-                'domain': current_site,
-                'uid': urlsafe_base64_encode(force_bytes(user.pk)),
-                'token': default_token_generator.make_token(user),
-            })
+            message = render_to_string(
+                'accounts/reset_password_email.html',
+                {
+                    'user': user,
+                    'domain': current_site,
+                    'uid': urlsafe_base64_encode(force_bytes(user.pk)),
+                    'token': default_token_generator.make_token(user),
+                }
+            )
             to_email = email
             send_email = EmailMessage(mail_subject, message, to=[to_email])
             send_email.send()
@@ -193,10 +203,12 @@ def forgot_password(request):
 def reset_password_validate(request, uidb64, token):
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
-        user = Account.objects.get(pk=uid)
-    except(TypeError, ValueError, OverflowError, Account.DoesNotExist):
+        user = UserModel.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, UserModel.DoesNotExist):
         user = None
-    if user is not None and default_token_generator.check_token(user, token): # check if this is secured request!
+
+        # check if this is secured request!
+    if user is not None and default_token_generator.check_token(user, token):
         request.session['uid'] = uid
         messages.success(request, 'Reset your password')
         return redirect('reset password')
@@ -212,7 +224,7 @@ def reset_password(request):
 
         if password == confirm_password:
             uid = request.session.get('uid')
-            user = Account.objects.get(pk=uid)
+            user = UserModel.objects.get(pk=uid)
             user.set_password(password)
             user.save()
             messages.success(request, 'Password reset successful')
@@ -264,14 +276,13 @@ def change_password(request):
         new_password = request.POST['new_password']
         confirm_password = request.POST['confirm_password']
 
-        user = Account.objects.get(username__exact=request.user.username)
+        user = UserModel.objects.get(username__exact=request.user.username)
 
         if new_password == confirm_password:
             success = user.check_password(current_password)
             if success:
                 user.set_password(new_password)
                 user.save()
-                # auth.logout(request)
                 messages.success(request, 'Password updated successfully.')
                 return redirect('change password')
             else:
