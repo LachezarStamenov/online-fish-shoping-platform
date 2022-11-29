@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
+from django.http import Http404
 from django.shortcuts import render, redirect, get_object_or_404
 
 from e_fish_shop_app.cart.utils import _get_cart, _get_cart_id, get_product_variation
@@ -108,8 +109,8 @@ def remove_product_from_cart(request, product_pk, cart_item_pk):
             cart_item.save()
         else:
             cart_item.delete()
-    except:
-        pass
+    except ObjectDoesNotExist:
+        raise Http404
     return redirect('cart')
 
 
@@ -143,7 +144,7 @@ def cart(request, total_price=0, quantity=0, cart_items=None):
         tax = (2 * total_price) / 100
         grand_total = total_price + tax
     except ObjectDoesNotExist:
-        pass
+        raise Http404
     context = {
         'total_price': total_price,
         'quantity': quantity,
@@ -170,7 +171,7 @@ def checkout(request, total_price=0, quantity=0, cart_items=None):
         tax = (2 * total_price) / 100
         grand_total = total_price + tax
     except ObjectDoesNotExist:
-        pass
+        raise Http404
     context = {
         'total_price': total_price,
         'quantity': quantity,
