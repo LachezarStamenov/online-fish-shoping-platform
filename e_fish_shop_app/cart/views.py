@@ -110,7 +110,7 @@ def remove_product_from_cart(request, product_pk, cart_item_pk):
         else:
             cart_item.delete()
     except ObjectDoesNotExist:
-        raise Http404
+        pass
     return redirect('cart')
 
 
@@ -144,7 +144,7 @@ def cart(request, total_price=0, quantity=0, cart_items=None):
         tax = (2 * total_price) / 100
         grand_total = total_price + tax
     except ObjectDoesNotExist:
-        raise Http404
+        pass
     context = {
         'total_price': total_price,
         'quantity': quantity,
@@ -171,7 +171,7 @@ def checkout(request, total_price=0, quantity=0, cart_items=None):
         tax = (2 * total_price) / 100
         grand_total = total_price + tax
     except ObjectDoesNotExist:
-        raise Http404
+        pass
     context = {
         'total_price': total_price,
         'quantity': quantity,
