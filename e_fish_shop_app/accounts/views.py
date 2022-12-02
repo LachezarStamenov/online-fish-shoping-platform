@@ -1,7 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.core.exceptions import ObjectDoesNotExist
 from django.core.mail import EmailMessage
-from django.http import Http404
 from django.shortcuts import render, redirect, get_object_or_404
 
 from django.contrib import messages, auth

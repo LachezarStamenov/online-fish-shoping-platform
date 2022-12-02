@@ -1,6 +1,5 @@
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
-from django.http import Http404
 from django.shortcuts import render, redirect, get_object_or_404
 
 from e_fish_shop_app.cart.utils import _get_cart, _get_cart_id, get_product_variation

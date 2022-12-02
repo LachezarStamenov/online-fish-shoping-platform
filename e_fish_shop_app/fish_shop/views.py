@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic import TemplateView
 
 from e_fish_shop_app.store.models import Product, ReviewRating

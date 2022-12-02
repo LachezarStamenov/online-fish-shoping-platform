@@ -1,5 +1,4 @@
 from django.test import TestCase
-
 from django.urls import reverse
 
 from e_fish_shop_app.store.models import ReviewRating
