@@ -1,0 +1,591 @@
+[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2022-11-01T09:47:27.246Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Catfishes", "action_flag":
+1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2022-11-01T10:14:41.135Z", "user": 1, "content_type": 7, "object_id": "2",
+"object_repr": "Goldfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2022-11-01T10:14:55.744Z", "user"
+: 1, "content_type": 7, "object_id": "1", "object_repr": "Catfishes", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2022-
+11-01T10:15:12.555Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Goldfish", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2022-11-01T10:16:46.141Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Platies", "action_flag":
+ 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2022-11-01T10:16:58.875Z", "user": 1, "content_type": 7, "object_id": "3",
+ "object_repr": "Platies", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2022-11-01T10:17:15.701Z", "user": 1, "content_typ
+e": 7, "object_id": "4", "object_repr": "Platies", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2022-11-0
+1T10:18:58.796Z", "user": 1, "content_type": 7, "object_id": "5", "object_repr": "Angelfishes", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry",
+"pk": 9, "fields": {"action_time": "2022-11-01T10:21:42.853Z", "user": 1, "content_type": 7, "object_id": "6", "object_repr": "Betta fish", "action_flag": 1, "change_message": "[{\"ad
+ded\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2022-11-01T10:26:13.039Z", "user": 1, "content_type": 7, "object_id": "7", "object_repr": "GloFish tet
+ra", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2022-11-01T11:42:16.784Z", "user": 1, "content_type":
+7, "object_id": "7", "object_repr": "GloFish tetra", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2022-11-01T11:42:16.788
+Z", "user": 1, "content_type": 7, "object_id": "6", "object_repr": "Betta fish", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_tim
+e": "2022-11-01T11:42:16.790Z", "user": 1, "content_type": 7, "object_id": "5", "object_repr": "Angelfishes", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk
+": 14, "fields": {"action_time": "2022-11-01T11:42:16.791Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "Platies", "action_flag": 3, "change_message": ""}}, {"mode
+l": "admin.logentry", "pk": 15, "fields": {"action_time": "2022-11-01T11:42:16.791Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Goldfish", "action_flag": 3, "cha
+nge_message": ""}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2022-11-01T11:42:16.793Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Catfish
+es", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2022-11-01T11:43:42.254Z", "user": 1, "content_type": 7, "object_id": "
+8", "object_repr": "Freshwater", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2022-11-01T11:46:56.436Z",
+ "user": 1, "content_type": 7, "object_id": "9", "object_repr": "Saltwater", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields":
+ {"action_time": "2022-11-01T11:55:03.538Z", "user": 1, "content_type": 7, "object_id": "10", "object_repr": "Catfishes", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"
+model": "admin.logentry", "pk": 20, "fields": {"action_time": "2022-11-01T11:58:20.189Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "Bronze Cory Catfish", "action
+_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2022-11-01T11:59:19.555Z", "user": 1, "content_type": 9, "object_i
+d": "2", "object_repr": "Angelfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2022-11-01T11:59:28.03
+5Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "Bronze Cory Catfish", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}}, {"
+model": "admin.logentry", "pk": 23, "fields": {"action_time": "2022-11-05T16:15:24.283Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "Julii Cory", "action_flag": 1
+, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2022-11-05T16:19:31.636Z", "user": 1, "content_type": 9, "object_id": "4",
+"object_repr": "sunburst_zebra_danio", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2022-11-05T16:20:44.
+678Z", "user": 1, "content_type": 9, "object_id": "5", "object_repr": "Silvertip Tetra", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2
+6, "fields": {"action_time": "2022-11-05T16:22:03.627Z", "user": 1, "content_type": 9, "object_id": "6", "object_repr": "Red Pencilfish Beckfordi", "action_flag": 1, "change_message":
+ "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2022-11-05T16:48:00.286Z", "user": 1, "content_type": 9, "object_id": "6", "object_repr": "Red
+ Pencilfish Beckfordi", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2022-11-05
+T17:00:52.712Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "Angelfish", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"}},
+{"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2022-11-06T12:18:58.074Z", "user": 1, "content_type": 12, "object_id": "1", "object_repr": "Variation object (1)", "ac
+tion_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2022-11-06T12:26:30.218Z", "user": 1, "content_type": 12, "obj
+ect_id": "2", "object_repr": "Variation object (2)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2022-1
+1-06T13:22:35.335Z", "user": 1, "content_type": 12, "object_id": "3", "object_repr": "Variation object (3)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admi
+n.logentry", "pk": 32, "fields": {"action_time": "2022-11-06T14:05:22.109Z", "user": 1, "content_type": 11, "object_id": "19", "object_repr": "CartItem object (19)", "action_flag": 2,
+ "change_message": "[{\"changed\": {\"fields\": [\"Variations\"]}}]"}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2022-11-06T14:05:39.047Z", "user": 1, "content
+_type": 11, "object_id": "19", "object_repr": "CartItem object (19)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2022-1
+1-06T14:06:13.622Z", "user": 1, "content_type": 12, "object_id": "3", "object_repr": "Small", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Variation value\"]}}]
+"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2022-11-06T16:58:00.271Z", "user": 1, "content_type": 11, "object_id": "23", "object_repr": "CartItem object (23)
+", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2022-11-06T16:58:00.273Z", "user": 1, "content_type": 11, "object_id": "2
+2", "object_repr": "CartItem object (22)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2022-11-06T16:58:00.274Z", "user"
+: 1, "content_type": 11, "object_id": "21", "object_repr": "CartItem object (21)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_t
+ime": "2022-11-06T17:17:03.357Z", "user": 1, "content_type": 11, "object_id": "25", "object_repr": "CartItem object (25)", "action_flag": 3, "change_message": ""}}, {"model": "admin.l
+ogentry", "pk": 39, "fields": {"action_time": "2022-11-06T17:17:03.358Z", "user": 1, "content_type": 11, "object_id": "24", "object_repr": "CartItem object (24)", "action_flag": 3, "c
+hange_message": ""}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2022-11-06T17:22:06.831Z", "user": 1, "content_type": 11, "object_id": "29", "object_repr": "Car
+tItem object (29)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2022-11-06T17:22:06.833Z", "user": 1, "content_type": 11
+, "object_id": "28", "object_repr": "CartItem object (28)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2022-11-06T17:22
+:06.834Z", "user": 1, "content_type": 11, "object_id": "27", "object_repr": "CartItem object (27)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 43, "fi
+elds": {"action_time": "2022-11-06T17:22:06.835Z", "user": 1, "content_type": 11, "object_id": "26", "object_repr": "CartItem object (26)", "action_flag": 3, "change_message": ""}}, {
+"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2022-11-06T17:25:50.182Z", "user": 1, "content_type": 11, "object_id": "32", "object_repr": "CartItem object (32)", "ac
+tion_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2022-11-06T17:25:50.184Z", "user": 1, "content_type": 11, "object_id": "31", "o
+bject_repr": "CartItem object (31)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2022-11-06T17:25:50.185Z", "user": 1, "
+content_type": 11, "object_id": "30", "object_repr": "CartItem object (30)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time":
+"2022-11-06T20:07:30.708Z", "user": 1, "content_type": 12, "object_id": "4", "object_repr": "Large", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logent
+ry", "pk": 48, "fields": {"action_time": "2022-11-08T09:07:33.719Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "lachezar.stamenov1@abv.bg", "action_flag": 3, "cha
+nge_message": ""}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2022-11-08T09:07:42.747Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "lacheza
+r.stamenov2@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2022-11-08T09:50:10.627Z", "user": 1, "content_type": 8
+, "object_id": "13", "object_repr": "lachezar.sta23@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2022-11-08T09:5
+2:45.934Z", "user": 1, "content_type": 8, "object_id": "15", "object_repr": "lachezar.sta23@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 52, "f
+ields": {"action_time": "2022-11-08T10:11:54.628Z", "user": 1, "content_type": 8, "object_id": "17", "object_repr": "pesho.stamatow@abv.bg", "action_flag": 3, "change_message": ""}},
+{"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2022-11-08T10:12:59.117Z", "user": 1, "content_type": 8, "object_id": "18", "object_repr": "pesho.stamatow@abv.bg", "a
+ction_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2022-11-08T10:14:02.305Z", "user": 1, "content_type": 8, "object_id": "19", "o
+bject_repr": "pesho.stamatow@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2022-11-08T10:15:09.257Z", "user": 1,
+"content_type": 8, "object_id": "20", "object_repr": "pesho.stamatow@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time":
+ "2022-11-08T10:15:31.857Z", "user": 1, "content_type": 8, "object_id": "21", "object_repr": "pesho.stamatow@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logent
+ry", "pk": 57, "fields": {"action_time": "2022-11-08T10:16:13.241Z", "user": 1, "content_type": 8, "object_id": "23", "object_repr": "pesho.stamatow@abv.bg", "action_flag": 3, "change
+_message": ""}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2022-11-08T10:18:19.747Z", "user": 1, "content_type": 8, "object_id": "25", "object_repr": "pesho34.s
+tamato344w@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2022-11-08T10:19:36.911Z", "user": 1, "content_type": 8,
+ "object_id": "27", "object_repr": "pesho34.stamato344w@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2022-11-08T
+10:29:37.225Z", "user": 1, "content_type": 8, "object_id": "29", "object_repr": "toni.stama@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 61, "f
+ields": {"action_time": "2022-11-08T10:31:15.153Z", "user": 1, "content_type": 8, "object_id": "31", "object_repr": "toni.stama@abv.bg", "action_flag": 3, "change_message": ""}}, {"mo
+del": "admin.logentry", "pk": 62, "fields": {"action_time": "2022-11-08T12:03:44.819Z", "user": 1, "content_type": 8, "object_id": "34", "object_repr": "lachezar.stamenhhhov@abv.bg",
+"action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2022-11-08T12:03:44.824Z", "user": 1, "content_type": 8, "object_id": "33",
+"object_repr": "toni.stama@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2022-11-08T12:10:31.238Z", "user": 1, "c
+ontent_type": 8, "object_id": "35", "object_repr": "lachezar.stamedsfsdfnov@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 65, "fields": {"action
+_time": "2022-11-09T07:07:28.263Z", "user": 1, "content_type": 8, "object_id": "40", "object_repr": "lach.df@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logent
+ry", "pk": 66, "fields": {"action_time": "2022-11-09T07:07:28.271Z", "user": 1, "content_type": 8, "object_id": "39", "object_repr": "peshodfd34.stamato344w@abv.bgghgh", "action_flag"
+: 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2022-11-09T07:07:28.272Z", "user": 1, "content_type": 8, "object_id": "37", "object_repr"
+: "pesho34.stamato344w@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2022-11-09T07:07:28.273Z", "user": 1, "conte
+nt_type": 8, "object_id": "36", "object_repr": "lachezar.stamedsfsdfnov@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_tim
+e": "2022-11-09T07:18:38.941Z", "user": 1, "content_type": 8, "object_id": "42", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry
+", "pk": 70, "fields": {"action_time": "2022-11-09T07:22:46.765Z", "user": 1, "content_type": 8, "object_id": "43", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_messag
+e": ""}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2022-11-09T07:22:46.767Z", "user": 1, "content_type": 8, "object_id": "41", "object_repr": "pesho34.stamato3
+44w@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2022-11-09T07:42:21.719Z", "user": 1, "content_type": 8, "objec
+t_id": "44", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2022-11-09T07:46:07.487Z", "
+user": 1, "content_type": 8, "object_id": "45", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_t
+ime": "2022-11-09T10:17:04.557Z", "user": 1, "content_type": 8, "object_id": "46", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logent
+ry", "pk": 75, "fields": {"action_time": "2022-11-09T10:19:56.245Z", "user": 1, "content_type": 8, "object_id": "47", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_mess
+age": ""}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2022-11-09T10:41:33.518Z", "user": 1, "content_type": 8, "object_id": "48", "object_repr": "luchko_88@abv.
+bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2022-11-09T12:10:23.411Z", "user": 1, "content_type": 8, "object_id": "
+49", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2022-11-09T12:18:51.168Z", "user": 1
+, "content_type": 8, "object_id": "50", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 79, "fields": {"action_time": "2
+022-11-09T12:21:18.944Z", "user": 1, "content_type": 8, "object_id": "52", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk
+": 80, "fields": {"action_time": "2022-11-09T12:22:35.629Z", "user": 1, "content_type": 8, "object_id": "53", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""
+}}, {"model": "admin.logentry", "pk": 81, "fields": {"action_time": "2022-11-09T12:33:23.328Z", "user": 1, "content_type": 8, "object_id": "55", "object_repr": "luchko_88@abv.bg", "ac
+tion_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 82, "fields": {"action_time": "2022-11-09T12:39:45.455Z", "user": 1, "content_type": 8, "object_id": "57", "ob
+ject_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 83, "fields": {"action_time": "2022-11-13T11:29:47.077Z", "user": 1, "conte
+nt_type": 11, "object_id": "63", "object_repr": "CartItem object (63)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 84, "fields": {"action_time": "2022
+-11-13T11:29:47.084Z", "user": 1, "content_type": 11, "object_id": "60", "object_repr": "CartItem object (60)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "
+pk": 85, "fields": {"action_time": "2022-11-13T11:29:47.085Z", "user": 1, "content_type": 11, "object_id": "57", "object_repr": "CartItem object (57)", "action_flag": 3, "change_messa
+ge": ""}}, {"model": "admin.logentry", "pk": 86, "fields": {"action_time": "2022-11-13T12:06:41.532Z", "user": 1, "content_type": 11, "object_id": "65", "object_repr": "CartItem objec
+t (65)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 87, "fields": {"action_time": "2022-11-13T12:06:41.534Z", "user": 1, "content_type": 11, "object_i
+d": "64", "object_repr": "CartItem object (64)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 88, "fields": {"action_time": "2022-11-13T12:06:53.927Z",
+"user": 1, "content_type": 10, "object_id": "6", "object_repr": "7xuni8a56irmwa0coj8n36wt2c5uviss", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 89, "fi
+elds": {"action_time": "2022-11-13T12:06:53.930Z", "user": 1, "content_type": 10, "object_id": "5", "object_repr": "co9dphq6wwolys18gkh1z6f6vy0uv0e4", "action_flag": 3, "change_messag
+e": ""}}, {"model": "admin.logentry", "pk": 90, "fields": {"action_time": "2022-11-13T12:06:53.930Z", "user": 1, "content_type": 10, "object_id": "9", "object_repr": "j0xbo3hyrfesuwoi
+m90zbqby3umr3azm", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 91, "fields": {"action_time": "2022-11-13T12:06:53.931Z", "user": 1, "content_type": 10,
+ "object_id": "8", "object_repr": "jzj8qjd0lfmws4rwkypa821sl8si6o3k", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 92, "fields": {"action_time": "2022-1
+1-13T12:06:53.932Z", "user": 1, "content_type": 10, "object_id": "7", "object_repr": "vwmjm26swja2ceh61q23ocmtsx7vrnif", "action_flag": 3, "change_message": ""}}, {"model": "admin.log
+entry", "pk": 93, "fields": {"action_time": "2022-11-13T12:56:40.249Z", "user": 1, "content_type": 11, "object_id": "74", "object_repr": "CartItem object (74)", "action_flag": 3, "cha
+nge_message": ""}}, {"model": "admin.logentry", "pk": 94, "fields": {"action_time": "2022-11-13T12:56:40.252Z", "user": 1, "content_type": 11, "object_id": "73", "object_repr": "CartI
+tem object (73)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 95, "fields": {"action_time": "2022-11-13T12:56:40.254Z", "user": 1, "content_type": 11,
+"object_id": "69", "object_repr": "CartItem object (69)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 96, "fields": {"action_time": "2022-11-13T12:56:4
+0.256Z", "user": 1, "content_type": 11, "object_id": "67", "object_repr": "CartItem object (67)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 97, "fiel
+ds": {"action_time": "2022-11-13T12:56:48.447Z", "user": 1, "content_type": 10, "object_id": "13", "object_repr": "1shnyzlalsnz5sivi760mu7rat4g57q3", "action_flag": 3, "change_message
+": ""}}, {"model": "admin.logentry", "pk": 98, "fields": {"action_time": "2022-11-13T12:56:48.449Z", "user": 1, "content_type": 10, "object_id": "12", "object_repr": "m9o34iwvw2e9k1x6
+85ilt6fkhnlhqhvc", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 99, "fields": {"action_time": "2022-11-13T12:56:48.450Z", "user": 1, "content_type": 10,
+ "object_id": "11", "object_repr": "2b9n6cfj2gjagj1xsck01ayx9lr0fhp5", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 100, "fields": {"action_time": "2022
+-11-13T12:56:48.451Z", "user": 1, "content_type": 10, "object_id": "10", "object_repr": "6b7yuyo2q4e19qzrw7533wynuktwwwbs", "action_flag": 3, "change_message": ""}}, {"model": "admin.
+logentry", "pk": 101, "fields": {"action_time": "2022-11-13T16:07:15.050Z", "user": 1, "content_type": 11, "object_id": "81", "object_repr": "CartItem object (81)", "action_flag": 3,
+"change_message": ""}}, {"model": "admin.logentry", "pk": 102, "fields": {"action_time": "2022-11-13T16:07:15.078Z", "user": 1, "content_type": 11, "object_id": "77", "object_repr": "
+CartItem object (77)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 103, "fields": {"action_time": "2022-11-13T16:07:15.080Z", "user": 1, "content_type"
+: 11, "object_id": "75", "object_repr": "CartItem object (75)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 104, "fields": {"action_time": "2022-11-13T
+16:07:22.640Z", "user": 1, "content_type": 10, "object_id": "16", "object_repr": "1k7od3yaz9lxot6zgso2wcq8kbj1sifa", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentr
+y", "pk": 105, "fields": {"action_time": "2022-11-13T16:07:22.642Z", "user": 1, "content_type": 10, "object_id": "15", "object_repr": "wano6q4w7lvpowi1ac5wyaxq3puqne4c", "action_flag"
+: 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 106, "fields": {"action_time": "2022-11-13T16:07:22.643Z", "user": 1, "content_type": 10, "object_id": "14", "object_rep
+r": "mexszikxqtyn64r3p78hk70il18g4h7s", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 107, "fields": {"action_time": "2022-11-13T16:16:16.989Z", "user":
+1, "content_type": 12, "object_id": "5", "object_repr": "Green", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 108, "fields": {"action_t
+ime": "2022-11-13T16:16:29.954Z", "user": 1, "content_type": 12, "object_id": "6", "object_repr": "Brown", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.
+logentry", "pk": 109, "fields": {"action_time": "2022-11-13T16:16:39.261Z", "user": 1, "content_type": 12, "object_id": "7", "object_repr": "Small", "action_flag": 1, "change_message"
+: "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 110, "fields": {"action_time": "2022-11-13T16:16:47.155Z", "user": 1, "content_type": 12, "object_id": "8", "object_repr": "
+Large", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 111, "fields": {"action_time": "2022-11-13T16:52:24.967Z", "user": 1, "content_typ
+e": 11, "object_id": "91", "object_repr": "CartItem object (91)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 112, "fields": {"action_time": "2022-11-1
+3T16:52:24.968Z", "user": 1, "content_type": 11, "object_id": "90", "object_repr": "CartItem object (90)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk":
+113, "fields": {"action_time": "2022-11-13T16:52:24.970Z", "user": 1, "content_type": 11, "object_id": "89", "object_repr": "CartItem object (89)", "action_flag": 3, "change_message":
+ ""}}, {"model": "admin.logentry", "pk": 114, "fields": {"action_time": "2022-11-13T16:52:24.971Z", "user": 1, "content_type": 11, "object_id": "87", "object_repr": "CartItem object (
+87)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 115, "fields": {"action_time": "2022-11-13T16:52:24.972Z", "user": 1, "content_type": 11, "object_id"
+: "86", "object_repr": "CartItem object (86)", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 116, "fields": {"action_time": "2022-11-13T16:52:31.917Z", "
+user": 1, "content_type": 10, "object_id": "18", "object_repr": "pdalom2gnyanni3l56snne22sdnf5uft", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 117, "f
+ields": {"action_time": "2022-11-13T16:52:31.920Z", "user": 1, "content_type": 10, "object_id": "17", "object_repr": "xv39ug5wrwhjkeojovoeqbn0zyutztjq", "action_flag": 3, "change_mess
+age": ""}}, {"model": "admin.logentry", "pk": 118, "fields": {"action_time": "2022-11-14T13:47:45.034Z", "user": 1, "content_type": 16, "object_id": "1", "object_repr": "Lachezar", "a
+ction_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 119, "fields": {"action_time": "2022-11-14T13:49:24.664Z", "user": 1, "content_type": 16, "o
+bject_id": "2", "object_repr": "Lachezar", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 120, "fields": {"action_time": "2022-11-14T14:2
+6:20.429Z", "user": 1, "content_type": 8, "object_id": "59", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 125, "field
+s": {"action_time": "2022-11-15T10:37:42.427Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "Angelfish", "action_flag": 2, "change_message": "[{\"added\": {\"name\"
+: \"product gallery\", \"object\": \"Angelfish\"}}]"}}, {"model": "admin.logentry", "pk": 126, "fields": {"action_time": "2022-11-18T14:18:58.070Z", "user": 1, "content_type": 9, "obj
+ect_id": "2", "object_repr": "Angelfish", "action_flag": 2, "change_message": "[{\"added\": {\"name\": \"product gallery\", \"object\": \"Angelfish\"}}]"}}, {"model": "admin.logentry"
+, "pk": 127, "fields": {"action_time": "2022-11-20T12:05:10.633Z", "user": 1, "content_type": 8, "object_id": "62", "object_repr": "", "action_flag": 1, "change_message": "[{\"added\"
+: {}}]"}}, {"model": "admin.logentry", "pk": 128, "fields": {"action_time": "2022-11-23T11:54:05.533Z", "user": 1, "content_type": 9, "object_id": "7", "object_repr": "Emperor Pleco",
+ "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 129, "fields": {"action_time": "2022-11-23T11:58:57.027Z", "user": 1, "content_type": 18,
+ "object_id": "3", "object_repr": "Emperor Pleco", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 130, "fields": {"action_time": "2022-11
+-23T12:07:08.459Z", "user": 1, "content_type": 18, "object_id": "4", "object_repr": "Emperor Pleco", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logent
+ry", "pk": 131, "fields": {"action_time": "2022-11-23T12:07:24.222Z", "user": 1, "content_type": 18, "object_id": "5", "object_repr": "Emperor Pleco", "action_flag": 1, "change_messag
+e": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 132, "fields": {"action_time": "2022-11-23T12:07:47.011Z", "user": 1, "content_type": 18, "object_id": "5", "object_repr":
+ "Emperor Pleco", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"}}, {"model": "admin.logentry", "pk": 133, "fields": {"action_time": "2022-11-23T12:0
+8:08.241Z", "user": 1, "content_type": 18, "object_id": "5", "object_repr": "Emperor Pleco", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"}}, {"mode
+l": "admin.logentry", "pk": 134, "fields": {"action_time": "2022-11-23T12:08:20.623Z", "user": 1, "content_type": 18, "object_id": "5", "object_repr": "Emperor Pleco", "action_flag":
+3, "change_message": ""}}, {"model": "admin.logentry", "pk": 135, "fields": {"action_time": "2022-11-23T12:09:31.858Z", "user": 1, "content_type": 12, "object_id": "9", "object_repr":
+ "Black", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 136, "fields": {"action_time": "2022-11-23T12:09:47.243Z", "user": 1, "content_t
+ype": 12, "object_id": "10", "object_repr": "Brown", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 137, "fields": {"action_time": "2022-
+11-23T12:09:58.746Z", "user": 1, "content_type": 12, "object_id": "11", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry",
+"pk": 138, "fields": {"action_time": "2022-11-23T12:10:17.621Z", "user": 1, "content_type": 12, "object_id": "12", "object_repr": "Large", "action_flag": 1, "change_message": "[{\"add
+ed\": {}}]"}}, {"model": "admin.logentry", "pk": 139, "fields": {"action_time": "2022-11-23T12:26:50.300Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": "Cory Catfis
+h", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Product name\", \"Slug\", \"Description\", \"Price\"]}}]"}}, {"model": "admin.logentry", "pk": 140, "fields": {
+"action_time": "2022-11-23T12:27:16.958Z", "user": 1, "content_type": 18, "object_id": "6", "object_repr": "Cory Catfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {
+"model": "admin.logentry", "pk": 141, "fields": {"action_time": "2022-11-23T12:27:27.158Z", "user": 1, "content_type": 18, "object_id": "7", "object_repr": "Cory Catfish", "action_fla
+g": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 142, "fields": {"action_time": "2022-11-23T12:27:33.878Z", "user": 1, "content_type": 18, "object_id"
+: "8", "object_repr": "Cory Catfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 143, "fields": {"action_time": "2022-11-23T12:27:47.
+557Z", "user": 1, "content_type": 12, "object_id": "13", "object_repr": "Orange", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 144, "fi
+elds": {"action_time": "2022-11-23T12:27:59.840Z", "user": 1, "content_type": 12, "object_id": "14", "object_repr": "Black", "action_flag": 1, "change_message": "[{\"added\": {}}]"}},
+ {"model": "admin.logentry", "pk": 145, "fields": {"action_time": "2022-11-23T12:28:08.905Z", "user": 1, "content_type": 12, "object_id": "15", "object_repr": "Small", "action_flag":
+1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 146, "fields": {"action_time": "2022-11-23T12:28:39.271Z", "user": 1, "content_type": 12, "object_id": "1
+", "object_repr": "Red", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 147, "fields": {"action_time": "2022-11-23T12:28:39.273Z", "user": 1, "content_typ
+e": 12, "object_id": "2", "object_repr": "Yellow", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 148, "fields": {"action_time": "2022-11-23T12:28:59.392Z
+", "user": 1, "content_type": 12, "object_id": "3", "object_repr": "Small", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 149, "fields": {"action_time":
+"2022-11-23T12:28:59.394Z", "user": 1, "content_type": 12, "object_id": "4", "object_repr": "Large", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 150, "
+fields": {"action_time": "2022-11-23T12:41:08.365Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": "Angelfish", "action_flag": 2, "change_message": "[{\"changed\": {\
+"fields\": [\"Description\"]}}]"}}, {"model": "admin.logentry", "pk": 151, "fields": {"action_time": "2022-11-23T12:41:26.476Z", "user": 1, "content_type": 18, "object_id": "2", "obje
+ct_repr": "Angelfish", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"}}, {"model": "admin.logentry", "pk": 152, "fields": {"action_time": "2022-11-23
+T12:41:34.113Z", "user": 1, "content_type": 18, "object_id": "1", "object_repr": "Angelfish", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"}}, {"mod
+el": "admin.logentry", "pk": 153, "fields": {"action_time": "2022-11-23T12:41:43.046Z", "user": 1, "content_type": 18, "object_id": "9", "object_repr": "Angelfish", "action_flag": 1,
+"change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 154, "fields": {"action_time": "2022-11-23T12:41:49.426Z", "user": 1, "content_type": 18, "object_id": "10",
+ "object_repr": "Angelfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 155, "fields": {"action_time": "2022-11-23T12:42:15.701Z", "u
+ser": 1, "content_type": 12, "object_id": "16", "object_repr": "Pink", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 156, "fields": {"ac
+tion_time": "2022-11-23T12:42:27.872Z", "user": 1, "content_type": 12, "object_id": "17", "object_repr": "Black", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model":
+"admin.logentry", "pk": 157, "fields": {"action_time": "2022-11-23T12:42:37.731Z", "user": 1, "content_type": 12, "object_id": "18", "object_repr": "Multicolor", "action_flag": 1, "ch
+ange_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 158, "fields": {"action_time": "2022-11-23T12:43:00.449Z", "user": 1, "content_type": 12, "object_id": "19", "o
+bject_repr": "Blue", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 159, "fields": {"action_time": "2022-11-23T12:43:10.183Z", "user": 1,
+ "content_type": 12, "object_id": "20", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 160, "fields": {"action_ti
+me": "2022-11-23T12:43:52.793Z", "user": 1, "content_type": 12, "object_id": "21", "object_repr": "Medium", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin
+.logentry", "pk": 161, "fields": {"action_time": "2022-11-25T11:49:20.402Z", "user": 1, "content_type": 8, "object_id": "60", "object_repr": "luchko_88@abv.bg", "action_flag": 2, "cha
+nge_message": "[{\"changed\": {\"fields\": [\"Is staff\"]}}]"}}, {"model": "admin.logentry", "pk": 162, "fields": {"action_time": "2022-11-25T11:50:16.806Z", "user": 1, "content_type"
+: 3, "object_id": "1", "object_repr": "Staff_usres", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 163, "fields": {"action_time": "2022-
+11-25T12:56:12.868Z", "user": 1, "content_type": 8, "object_id": "60", "object_repr": "luchko_88@abv.bg", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"First nam
+e\", \"Last name\", \"Groups\"]}}]"}}, {"model": "admin.logentry", "pk": 164, "fields": {"action_time": "2022-11-25T12:57:09.539Z", "user": 1, "content_type": 8, "object_id": "60", "o
+bject_repr": "luchko_88@abv.bg", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"}}, {"model": "admin.logentry", "pk": 165, "fields": {"acti
+on_time": "2022-11-25T13:00:03.298Z", "user": 1, "content_type": 8, "object_id": "63", "object_repr": "sdsds@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logent
+ry", "pk": 166, "fields": {"action_time": "2022-11-25T13:00:03.301Z", "user": 1, "content_type": 8, "object_id": "62", "object_repr": "", "action_flag": 3, "change_message": ""}}, {"m
+odel": "admin.logentry", "pk": 167, "fields": {"action_time": "2022-11-25T13:00:03.302Z", "user": 1, "content_type": 8, "object_id": "61", "object_repr": "lachezar.stamenov435@gmail.c
+om", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 168, "fields": {"action_time": "2022-11-25T13:02:08.558Z", "user": 1, "content_type": 8, "object_id":
+"64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"}}, {"model": "admin.logentry", "pk": 169, "fie
+lds": {"action_time": "2022-11-25T13:03:15.006Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message":
+ "[{\"changed\": {\"fields\": [\"Is staff\"]}}]"}}, {"model": "admin.logentry", "pk": 170, "fields": {"action_time": "2022-11-25T13:08:41.932Z", "user": 1, "content_type": 8, "object_
+id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"}}, {"model": "admin.logentry",
+"pk": 171, "fields": {"action_time": "2022-11-25T13:12:51.228Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "c
+hange_message": "[]"}}, {"model": "admin.logentry", "pk": 172, "fields": {"action_time": "2022-11-25T13:13:27.106Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "l
+achezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Superuser status\"]}}]"}}, {"model": "admin.logentry", "pk": 173, "fields": {"actio
+n_time": "2022-11-25T13:17:17.128Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed
+\": {\"fields\": [\"User permissions\"]}}]"}}, {"model": "admin.logentry", "pk": 174, "fields": {"action_time": "2022-11-25T13:59:23.985Z", "user": 1, "content_type": 8, "object_id":
+"64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 175, "fields": {"action_time": "2022-11-25T14:00:4
+8.236Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"User per
+missions\"]}}]"}}, {"model": "admin.logentry", "pk": 176, "fields": {"action_time": "2022-11-25T14:11:10.485Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "lachez
+ar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 177, "fields": {"action_time": "2022-11-25T14:33:10.488Z", "user": 1, "content
+_type": 8, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is admin\"]}}]"}}, {"model": "admin.
+logentry", "pk": 178, "fields": {"action_time": "2022-11-25T14:34:56.917Z", "user": 1, "content_type": 20, "object_id": "1", "object_repr": "Staff_usres", "action_flag": 2, "change_me
+ssage": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"}}, {"model": "admin.logentry", "pk": 179, "fields": {"action_time": "2022-11-25T14:50:47.015Z", "user": 1, "content_type": 8
+, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is admin\", \"User permissions\"]}}]"}}, {"mo
+del": "admin.logentry", "pk": 180, "fields": {"action_time": "2022-11-25T14:54:53.725Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.co
+m", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"User permissions\"]}}]"}}, {"model": "admin.logentry", "pk": 181, "fields": {"action_time": "2022-11-25T14:55:1
+2.674Z", "user": 1, "content_type": 3, "object_id": "1", "object_repr": "Staff_usres", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"}}, {"mode
+l": "admin.logentry", "pk": 182, "fields": {"action_time": "2022-11-25T15:01:28.035Z", "user": 1, "content_type": 9, "object_id": "8", "object_repr": "Barb", "action_flag": 1, "change
+_message": "[{\"added\": {}}, {\"added\": {\"name\": \"product gallery\", \"object\": \"Barb\"}}, {\"added\": {\"name\": \"product gallery\", \"object\": \"Barb\"}}, {\"added\": {\"na
+me\": \"product gallery\", \"object\": \"Barb\"}}]"}}, {"model": "admin.logentry", "pk": 188, "fields": {"action_time": "2022-11-25T15:27:09.145Z", "user": 1, "content_type": 9, "obje
+ct_id": "11", "object_repr": "Danio", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"product gallery\", \"object\": \"Danio\"}}, {\"added\": {\"name\"
+: \"product gallery\", \"object\": \"Danio\"}}, {\"added\": {\"name\": \"product gallery\", \"object\": \"Danio\"}}]"}}, {"model": "admin.logentry", "pk": 190, "fields": {"action_time
+": "2022-11-25T15:28:22.915Z", "user": 1, "content_type": 8, "object_id": "64", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 3, "change_message": ""}}, {"model": "a
+dmin.logentry", "pk": 191, "fields": {"action_time": "2022-11-25T15:29:10.459Z", "user": 1, "content_type": 8, "object_id": "65", "object_repr": "", "action_flag": 1, "change_message"
+: "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 192, "fields": {"action_time": "2022-11-25T15:30:14.296Z", "user": 1, "content_type": 8, "object_id": "65", "object_repr": "
+lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Email\", \"First name\", \"Last name\", \"Is active\", \"Is staff\", \"Groups\"]}}
+]"}}, {"model": "admin.logentry", "pk": 195, "fields": {"action_time": "2022-11-25T15:41:24.965Z", "user": 1, "content_type": 8, "object_id": "65", "object_repr": "lachezar.stamenov43
+5@gmail.com", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is admin\"]}}]"}}, {"model": "admin.logentry", "pk": 197, "fields": {"action_time": "2022-11-25T15:42
+:33.068Z", "user": 1, "content_type": 16, "object_id": "6", "object_repr": "Lachezar", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 198
+, "fields": {"action_time": "2022-11-25T15:47:46.137Z", "user": 1, "content_type": 8, "object_id": "65", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 3, "change_mes
+sage": ""}}, {"model": "admin.logentry", "pk": 199, "fields": {"action_time": "2022-11-25T15:48:36.716Z", "user": 1, "content_type": 8, "object_id": "60", "object_repr": "luchko_88@ab
+v.bg", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is admin\"]}}]"}}, {"model": "admin.logentry", "pk": 203, "fields": {"action_time": "2022-11-25T15:58:07.214
+Z", "user": 1, "content_type": 8, "object_id": "67", "object_repr": "", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 204, "fields": {"a
+ction_time": "2022-11-25T15:58:26.697Z", "user": 1, "content_type": 8, "object_id": "67", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[{\"cha
+nged\": {\"fields\": [\"Email\", \"First name\", \"Last name\", \"Is admin\", \"Is active\", \"Is staff\", \"Groups\"]}}]"}}, {"model": "admin.logentry", "pk": 208, "fields": {"action
+_time": "2022-11-25T16:51:06.689Z", "user": 1, "content_type": 8, "object_id": "67", "object_repr": "lachezar.stamenov435@gmail.com", "action_flag": 2, "change_message": "[]"}}, {"mod
+el": "admin.logentry", "pk": 210, "fields": {"action_time": "2022-11-25T17:05:21.417Z", "user": 1, "content_type": 8, "object_id": "60", "object_repr": "luchko_88@abv.bg", "action_fla
+g": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 211, "fields": {"action_time": "2022-11-25T17:08:31.977Z", "user": 1, "content_type": 8, "object_id": "68", "object_re
+pr": "luchko_88@abv.bg", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is staff\", \"Groups\"]}}]"}}, {"model": "admin.logentry", "pk": 213, "fields": {"action_t
+ime": "2022-11-25T17:15:56.311Z", "user": 1, "content_type": 8, "object_id": "68", "object_repr": "luchko_88@abv.bg", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\":
+[\"Is superadmin\"]}}]"}}, {"model": "admin.logentry", "pk": 215, "fields": {"action_time": "2022-11-25T17:17:00.723Z", "user": 1, "content_type": 8, "object_id": "68", "object_repr":
+ "luchko_88@abv.bg", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Is superadmin\"]}}]"}}, {"model": "admin.logentry", "pk": 216, "fields": {"action_time": "2022
+-11-25T17:19:47.953Z", "user": 1, "content_type": 8, "object_id": "68", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk":
+223, "fields": {"action_time": "2022-11-25T19:13:47.251Z", "user": 1, "content_type": 12, "object_id": "25", "object_repr": "Green", "action_flag": 1, "change_message": "[{\"added\":
+{}}]"}}, {"model": "admin.logentry", "pk": 224, "fields": {"action_time": "2022-11-25T19:14:06.250Z", "user": 1, "content_type": 12, "object_id": "26", "object_repr": "Orange", "actio
+n_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 225, "fields": {"action_time": "2022-11-25T19:14:20.494Z", "user": 1, "content_type": 12, "objec
+t_id": "27", "object_repr": "Purple", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 226, "fields": {"action_time": "2022-11-25T19:14:30.
+900Z", "user": 1, "content_type": 12, "object_id": "28", "object_repr": "Red", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 227, "field
+s": {"action_time": "2022-11-25T19:14:47.156Z", "user": 1, "content_type": 12, "object_id": "29", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"
+model": "admin.logentry", "pk": 228, "fields": {"action_time": "2022-11-25T19:15:25.379Z", "user": 1, "content_type": 12, "object_id": "30", "object_repr": "Green", "action_flag": 1,
+"change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 229, "fields": {"action_time": "2022-11-25T19:15:38.447Z", "user": 1, "content_type": 12, "object_id": "31",
+ "object_repr": "Purple", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 230, "fields": {"action_time": "2022-11-25T19:15:45.858Z", "user
+": 1, "content_type": 12, "object_id": "32", "object_repr": "Red", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 231, "fields": {"action
+_time": "2022-11-25T19:15:54.383Z", "user": 1, "content_type": 12, "object_id": "33", "object_repr": "Yellow", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "ad
+min.logentry", "pk": 232, "fields": {"action_time": "2022-11-25T19:16:02.042Z", "user": 1, "content_type": 12, "object_id": "34", "object_repr": "Small", "action_flag": 1, "change_mes
+sage": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 233, "fields": {"action_time": "2022-11-25T19:16:16.875Z", "user": 1, "content_type": 12, "object_id": "35", "object_re
+pr": "Normal", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 234, "fields": {"action_time": "2022-11-25T19:25:01.776Z", "user": 1, "cont
+ent_type": 9, "object_id": "12", "object_repr": "Clownfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 235, "fields": {"action_time"
+: "2022-11-25T19:25:25.352Z", "user": 1, "content_type": 12, "object_id": "36", "object_repr": "Orange", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.lo
+gentry", "pk": 236, "fields": {"action_time": "2022-11-25T19:25:35.421Z", "user": 1, "content_type": 12, "object_id": "37", "object_repr": "Small", "action_flag": 1, "change_message":
+ "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 237, "fields": {"action_time": "2022-11-25T19:25:49.368Z", "user": 1, "content_type": 12, "object_id": "38", "object_repr": "
+Medium", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 238, "fields": {"action_time": "2022-11-25T19:26:00.255Z", "user": 1, "content_ty
+pe": 12, "object_id": "39", "object_repr": "Large", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 239, "fields": {"action_time": "2022-1
+1-25T19:28:47.783Z", "user": 1, "content_type": 9, "object_id": "13", "object_repr": "Blenny", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "
+pk": 240, "fields": {"action_time": "2022-11-25T19:29:41.135Z", "user": 1, "content_type": 9, "object_id": "13", "object_repr": "Blenny", "action_flag": 2, "change_message": "[{\"adde
+d\": {\"name\": \"product gallery\", \"object\": \"Blenny\"}}]"}}, {"model": "admin.logentry", "pk": 241, "fields": {"action_time": "2022-11-25T19:30:00.792Z", "user": 1, "content_typ
+e": 12, "object_id": "40", "object_repr": "bicolor", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 242, "fields": {"action_time": "2022-
+11-25T19:30:14.166Z", "user": 1, "content_type": 12, "object_id": "41", "object_repr": "Blue", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "
+pk": 243, "fields": {"action_time": "2022-11-25T19:30:22.100Z", "user": 1, "content_type": 12, "object_id": "42", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"adde
+d\": {}}]"}}, {"model": "admin.logentry", "pk": 244, "fields": {"action_time": "2022-11-25T19:31:47.952Z", "user": 1, "content_type": 9, "object_id": "14", "object_repr": "Hawkfish",
+"action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 245, "fields": {"action_time": "2022-11-25T19:32:02.569Z", "user": 1, "content_type": 12,
+"object_id": "43", "object_repr": "Red", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 246, "fields": {"action_time": "2022-11-25T19:32:
+11.976Z", "user": 1, "content_type": 12, "object_id": "44", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 247, "
+fields": {"action_time": "2022-11-25T19:32:29.453Z", "user": 1, "content_type": 12, "object_id": "45", "object_repr": "Normal", "action_flag": 1, "change_message": "[{\"added\": {}}]"
+}}, {"model": "admin.logentry", "pk": 248, "fields": {"action_time": "2022-11-25T19:33:48.655Z", "user": 1, "content_type": 9, "object_id": "15", "object_repr": "Royal Gramma", "actio
+n_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 249, "fields": {"action_time": "2022-11-25T19:34:15.202Z", "user": 1, "content_type": 12, "objec
+t_id": "46", "object_repr": "Bicolor", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 250, "fields": {"action_time": "2022-11-25T19:34:23
+.245Z", "user": 1, "content_type": 12, "object_id": "47", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 251, "fi
+elds": {"action_time": "2022-11-25T19:34:33.311Z", "user": 1, "content_type": 12, "object_id": "48", "object_repr": "Large", "action_flag": 1, "change_message": "[{\"added\": {}}]"}},
+ {"model": "admin.logentry", "pk": 253, "fields": {"action_time": "2022-11-30T09:38:31.061Z", "user": 1, "content_type": 8, "object_id": "74", "object_repr": "lachezar.stadfdfmenov@ab
+v.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 254, "fields": {"action_time": "2022-11-30T09:38:31.069Z", "user": 1, "content_type": 8, "object_id"
+: "73", "object_repr": "luchkodf_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 255, "fields": {"action_time": "2022-11-30T09:38:31.071Z", "us
+er": 1, "content_type": 8, "object_id": "72", "object_repr": "luchko_jkhhj88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 256, "fields": {"acti
+on_time": "2022-11-30T09:38:31.072Z", "user": 1, "content_type": 8, "object_id": "70", "object_repr": "luchko_88@abv.bg", "action_flag": 3, "change_message": ""}}, {"model": "admin.lo
+gentry", "pk": 257, "fields": {"action_time": "2022-11-30T09:38:31.073Z", "user": 1, "content_type": 8, "object_id": "69", "object_repr": "lchr.stmv@abv.bg", "action_flag": 3, "change
+_message": ""}}, {"model": "admin.logentry", "pk": 258, "fields": {"action_time": "2022-11-30T09:40:14.714Z", "user": 1, "content_type": 7, "object_id": "12", "object_repr": "Saltfish
+es", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 259, "fields": {"action_time": "2022-12-02T08:54:38.545Z", "user": 1, "content_type": 9, "object_id":
+"17", "object_repr": "Armored Catfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 260, "fields": {"action_time": "2022-12-02T08:54:5
+8.913Z", "user": 1, "content_type": 12, "object_id": "49", "object_repr": "Grey", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 261, "fi
+elds": {"action_time": "2022-12-02T08:55:11.549Z", "user": 1, "content_type": 12, "object_id": "50", "object_repr": "Bicolor", "action_flag": 1, "change_message": "[{\"added\": {}}]"}
+}, {"model": "admin.logentry", "pk": 262, "fields": {"action_time": "2022-12-02T08:55:19.474Z", "user": 1, "content_type": 12, "object_id": "51", "object_repr": "Small", "action_flag"
+: 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 263, "fields": {"action_time": "2022-12-02T08:55:30.371Z", "user": 1, "content_type": 12, "object_id":
+"52", "object_repr": "Large", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 264, "fields": {"action_time": "2022-12-02T08:56:58.164Z", "
+user": 1, "content_type": 12, "object_id": "53", "object_repr": "White", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 265, "fields": {"
+action_time": "2022-12-02T08:57:06.105Z", "user": 1, "content_type": 12, "object_id": "54", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model"
+: "admin.logentry", "pk": 266, "fields": {"action_time": "2022-12-02T08:58:18.850Z", "user": 1, "content_type": 9, "object_id": "17", "object_repr": "Armored Catfish", "action_flag":
+2, "change_message": "[{\"added\": {\"name\": \"product gallery\", \"object\": \"Armored Catfish\"}}, {\"added\": {\"name\": \"product gallery\", \"object\": \"Armored Catfish\"}}, {\
+"added\": {\"name\": \"product gallery\", \"object\": \"Armored Catfish\"}}]"}}, {"model": "admin.logentry", "pk": 267, "fields": {"action_time": "2022-12-04T12:00:31.454Z", "user": 1
+, "content_type": 12, "object_id": "55", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 268, "fields": {"action_t
+ime": "2022-12-04T12:00:44.803Z", "user": 1, "content_type": 12, "object_id": "56", "object_repr": "Normal", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admi
+n.logentry", "pk": 269, "fields": {"action_time": "2022-12-04T12:01:05.276Z", "user": 1, "content_type": 12, "object_id": "57", "object_repr": "Large", "action_flag": 1, "change_messa
+ge": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 270, "fields": {"action_time": "2022-12-04T12:05:08.258Z", "user": 1, "content_type": 9, "object_id": "18", "object_repr"
+: "Whiptail Catfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 271, "fields": {"action_time": "2022-12-04T12:05:31.167Z", "user": 1
+, "content_type": 12, "object_id": "58", "object_repr": "Black", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 272, "fields": {"action_t
+ime": "2022-12-04T12:05:39.870Z", "user": 1, "content_type": 12, "object_id": "59", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin
+.logentry", "pk": 273, "fields": {"action_time": "2022-12-04T12:05:51.301Z", "user": 1, "content_type": 12, "object_id": "60", "object_repr": "Normal", "action_flag": 1, "change_messa
+ge": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 274, "fields": {"action_time": "2022-12-04T12:10:08.188Z", "user": 1, "content_type": 9, "object_id": "19", "object_repr"
+: "Otocinclus Catfish", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 275, "fields": {"action_time": "2022-12-04T12:10:29.425Z", "user":
+ 1, "content_type": 12, "object_id": "61", "object_repr": "Bicolor", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 276, "fields": {"acti
+on_time": "2022-12-04T12:10:37.281Z", "user": 1, "content_type": 12, "object_id": "62", "object_repr": "Small", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "a
+dmin.logentry", "pk": 277, "fields": {"action_time": "2022-12-04T12:12:12.077Z", "user": 1, "content_type": 12, "object_id": "61", "object_repr": "Bicolor", "action_flag": 3, "change_
+message": ""}}, {"model": "admin.logentry", "pk": 278, "fields": {"action_time": "2022-12-04T12:12:12.079Z", "user": 1, "content_type": 12, "object_id": "62", "object_repr": "Small",
+"action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 279, "fields": {"action_time": "2022-12-04T12:45:20.109Z", "user": 1, "content_type": 9, "object_id": "20",
+ "object_repr": "Tang Fish", "action_flag": 1, "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"product gallery\", \"object\": \"Tang Fish\"}}, {\"added\": {\"name\": \"p
+roduct gallery\", \"object\": \"Tang Fish\"}}]"}}, {"model": "admin.logentry", "pk": 280, "fields": {"action_time": "2022-12-04T12:45:36.056Z", "user": 1, "content_type": 12, "object_
+id": "63", "object_repr": "Black", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 281, "fields": {"action_time": "2022-12-04T12:45:49.303
+Z", "user": 1, "content_type": 12, "object_id": "64", "object_repr": "Yellow", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 282, "field
+s": {"action_time": "2022-12-04T12:45:59.189Z", "user": 1, "content_type": 12, "object_id": "65", "object_repr": "Blue", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"m
+odel": "admin.logentry", "pk": 283, "fields": {"action_time": "2022-12-04T12:46:06.741Z", "user": 1, "content_type": 12, "object_id": "66", "object_repr": "Small", "action_flag": 1, "
+change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 284, "fields": {"action_time": "2022-12-04T12:46:14.895Z", "user": 1, "content_type": 12, "object_id": "67",
+"object_repr": "Large", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "co
+dename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permiss
+ion", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log en
+try", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}
+}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "field
+s": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_ty
+pe": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permis
+sion", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group",
+"content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "
+auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user"
+, "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model"
+: "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add con
+tent type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "ch
+ange_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permis
+sion", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add se
+ssion", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"
+}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields":
+ {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add category", "content_type": 7, "codena
+me": "add_category"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change category", "content_type": 7, "codename": "change_category"}}, {"model": "auth.permission"
+, "pk": 27, "fields": {"name": "Can delete category", "content_type": 7, "codename": "delete_category"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view category"
+, "content_type": 7, "codename": "view_category"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add account", "content_type": 8, "codename": "add_account"}}, {"mode
+l": "auth.permission", "pk": 30, "fields": {"name": "Can change account", "content_type": 8, "codename": "change_account"}}, {"model": "auth.permission", "pk": 31, "fields": {"name":
+"Can delete account", "content_type": 8, "codename": "delete_account"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view account", "content_type": 8, "codename": "
+view_account"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add product", "content_type": 9, "codename": "add_product"}}, {"model": "auth.permission", "pk": 34, "f
+ields": {"name": "Can change product", "content_type": 9, "codename": "change_product"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete product", "content_type
+": 9, "codename": "delete_product"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view product", "content_type": 9, "codename": "view_product"}}, {"model": "auth.pe
+rmission", "pk": 37, "fields": {"name": "Can add cart", "content_type": 10, "codename": "add_cart"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change cart", "con
+tent_type": 10, "codename": "change_cart"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete cart", "content_type": 10, "codename": "delete_cart"}}, {"model": "a
+uth.permission", "pk": 40, "fields": {"name": "Can view cart", "content_type": 10, "codename": "view_cart"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can add cart i
+tem", "content_type": 11, "codename": "add_cartitem"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can change cart item", "content_type": 11, "codename": "change_carti
+tem"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can delete cart item", "content_type": 11, "codename": "delete_cartitem"}}, {"model": "auth.permission", "pk": 44, "
+fields": {"name": "Can view cart item", "content_type": 11, "codename": "view_cartitem"}}, {"model": "auth.permission", "pk": 45, "fields": {"name": "Can add variation", "content_type
+": 12, "codename": "add_variation"}}, {"model": "auth.permission", "pk": 46, "fields": {"name": "Can change variation", "content_type": 12, "codename": "change_variation"}}, {"model":
+ "auth.permission", "pk": 47, "fields": {"name": "Can delete variation", "content_type": 12, "codename": "delete_variation"}}, {"model": "auth.permission", "pk": 48, "fields": {"name"
+: "Can view variation", "content_type": 12, "codename": "view_variation"}}, {"model": "auth.permission", "pk": 49, "fields": {"name": "Can add payment", "content_type": 13, "codename"
+: "add_payment"}}, {"model": "auth.permission", "pk": 50, "fields": {"name": "Can change payment", "content_type": 13, "codename": "change_payment"}}, {"model": "auth.permission", "pk
+": 51, "fields": {"name": "Can delete payment", "content_type": 13, "codename": "delete_payment"}}, {"model": "auth.permission", "pk": 52, "fields": {"name": "Can view payment", "cont
+ent_type": 13, "codename": "view_payment"}}, {"model": "auth.permission", "pk": 53, "fields": {"name": "Can add order", "content_type": 14, "codename": "add_order"}}, {"model": "auth.
+permission", "pk": 54, "fields": {"name": "Can change order", "content_type": 14, "codename": "change_order"}}, {"model": "auth.permission", "pk": 55, "fields": {"name": "Can delete o
+rder", "content_type": 14, "codename": "delete_order"}}, {"model": "auth.permission", "pk": 56, "fields": {"name": "Can view order", "content_type": 14, "codename": "view_order"}}, {"
+model": "auth.permission", "pk": 57, "fields": {"name": "Can add order product", "content_type": 15, "codename": "add_orderproduct"}}, {"model": "auth.permission", "pk": 58, "fields":
+ {"name": "Can change order product", "content_type": 15, "codename": "change_orderproduct"}}, {"model": "auth.permission", "pk": 59, "fields": {"name": "Can delete order product", "c
+ontent_type": 15, "codename": "delete_orderproduct"}}, {"model": "auth.permission", "pk": 60, "fields": {"name": "Can view order product", "content_type": 15, "codename": "view_orderp
+roduct"}}, {"model": "auth.permission", "pk": 61, "fields": {"name": "Can add user profile", "content_type": 16, "codename": "add_userprofile"}}, {"model": "auth.permission", "pk": 62
+, "fields": {"name": "Can change user profile", "content_type": 16, "codename": "change_userprofile"}}, {"model": "auth.permission", "pk": 63, "fields": {"name": "Can delete user prof
+ile", "content_type": 16, "codename": "delete_userprofile"}}, {"model": "auth.permission", "pk": 64, "fields": {"name": "Can view user profile", "content_type": 16, "codename": "view_
+userprofile"}}, {"model": "auth.permission", "pk": 65, "fields": {"name": "Can add review rating", "content_type": 17, "codename": "add_reviewrating"}}, {"model": "auth.permission", "
+pk": 66, "fields": {"name": "Can change review rating", "content_type": 17, "codename": "change_reviewrating"}}, {"model": "auth.permission", "pk": 67, "fields": {"name": "Can delete
+review rating", "content_type": 17, "codename": "delete_reviewrating"}}, {"model": "auth.permission", "pk": 68, "fields": {"name": "Can view review rating", "content_type": 17, "coden
+ame": "view_reviewrating"}}, {"model": "auth.permission", "pk": 69, "fields": {"name": "Can add product gallery", "content_type": 18, "codename": "add_productgallery"}}, {"model": "au
+th.permission", "pk": 70, "fields": {"name": "Can change product gallery", "content_type": 18, "codename": "change_productgallery"}}, {"model": "auth.permission", "pk": 71, "fields":
+{"name": "Can delete product gallery", "content_type": 18, "codename": "delete_productgallery"}}, {"model": "auth.permission", "pk": 72, "fields": {"name": "Can view product gallery",
+ "content_type": 18, "codename": "view_productgallery"}}, {"model": "auth.permission", "pk": 73, "fields": {"name": "Can add login attempt", "content_type": 19, "codename": "add_login
+attempt"}}, {"model": "auth.permission", "pk": 74, "fields": {"name": "Can change login attempt", "content_type": 19, "codename": "change_loginattempt"}}, {"model": "auth.permission",
+ "pk": 75, "fields": {"name": "Can delete login attempt", "content_type": 19, "codename": "delete_loginattempt"}}, {"model": "auth.permission", "pk": 76, "fields": {"name": "Can view
+login attempt", "content_type": 19, "codename": "view_loginattempt"}}, {"model": "auth.permission", "pk": 77, "fields": {"name": "Can add group", "content_type": 20, "codename": "add_
+group"}}, {"model": "auth.permission", "pk": 78, "fields": {"name": "Can change group", "content_type": 20, "codename": "change_group"}}, {"model": "auth.permission", "pk": 79, "field
+s": {"name": "Can delete group", "content_type": 20, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 80, "fields": {"name": "Can view group", "content_type": 20, "cod
+ename": "view_group"}}, {"model": "auth.group", "pk": 1, "fields": {"name": "Staff_usres", "permissions": [42, 43, 44, 25, 26, 27, 28, 17, 18, 19, 20, 53, 54, 55, 56, 57, 58, 59, 60,
+49, 50, 51, 52, 21, 22, 23, 24, 33, 34, 35, 36, 69, 70, 71, 72, 65, 66, 67, 68, 45, 46, 47, 48]}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "mod
+el": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"a
+pp_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5,
+ "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "
+contenttypes.contenttype", "pk": 7, "fields": {"app_label": "category", "model": "category"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "accounts", "mode
+l": "account"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "store", "model": "product"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_
+label": "cart", "model": "cart"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "cart", "model": "cartitem"}}, {"model": "contenttypes.contenttype", "pk": 1
+2, "fields": {"app_label": "store", "model": "variation"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "orders", "model": "payment"}}, {"model": "contentt
+ypes.contenttype", "pk": 14, "fields": {"app_label": "orders", "model": "order"}}, {"model": "contenttypes.contenttype", "pk": 15, "fields": {"app_label": "orders", "model": "orderpro
+duct"}}, {"model": "contenttypes.contenttype", "pk": 16, "fields": {"app_label": "accounts", "model": "userprofile"}}, {"model": "contenttypes.contenttype", "pk": 17, "fields": {"app_
+label": "store", "model": "reviewrating"}}, {"model": "contenttypes.contenttype", "pk": 18, "fields": {"app_label": "store", "model": "productgallery"}}, {"model": "contenttypes.conte
+nttype", "pk": 19, "fields": {"app_label": "admin_honeypot", "model": "loginattempt"}}, {"model": "contenttypes.contenttype", "pk": 20, "fields": {"app_label": "accounts", "model": "g
+roup"}}, {"model": "sessions.session", "pk": "7bgvfk58cwlr4nh2iywhmffebyuj4y4k", "fields": {"session_data": ".eJxVjMEOwiAQRP-FsyGFFrZ49O43kGUXpGogKe3J-O9K0oPeJvPezEt43Lfs9xZXv7A4CyVOv
+11AesTSAd-x3KqkWrZ1CbIr8qBNXivH5-Vw_w4ytvxdD8AWeARnEupJszVhJnYTDSbN2jhGRCDSGKzSKSGEHuJoCZhdUuL9AewFOJY:1p1oJm:MzxdhhcGo2VEx40EfpD9yc6ofr6qbTNI603JZY-Jnyw", "expire_date": "2022-12-18T
+12:42:02.742Z"}}, {"model": "sessions.session", "pk": "aeci374doetno6x1lfx8g2aw64cc7ddk", "fields": {"session_data": "e30:1ouBzs:ax3arWVFZOKsFvohjJUWegmkhcDd_n8-V17M4AYLUCk", "expire_
+date": "2022-11-27T12:22:00.125Z"}}, {"model": "sessions.session", "pk": "h2rgievlb9pn6izivsyxbpbmhjqhgy6j", "fields": {"session_data": "e30:1osNgb:ygjH7lS9aa0aEOx7CV0aiBcNWGpA2B392vm
+ZjfM7wdw", "expire_date": "2022-11-22T12:26:37.692Z"}}, {"model": "sessions.session", "pk": "mmczy8vniad0uu39jdnefsj7aafkw0mr", "fields": {"session_data": ".eJxVjDsOwyAQBe9CHSGD-aZM7z
+OgXViCkwgkY1dR7h5bcpG0b2bemwXY1hK2TkuYE7sy7dnld0SIT6oHSQ-o98Zjq-syIz8UftLOp5bodTvdv4MCvex1dj47gxYNjjgQkZKgUIB3o9WCjAA52pxBgkyUcVA5Sqe1Au-t2HX2-QInmjjX:1ouBQ2:p6KhT3OcJN5auaPVooguDU1qr
+Gh4Yb4RxUq4PPyj85U", "expire_date": "2022-11-27T11:44:58.376Z"}}, {"model": "sessions.session", "pk": "wr315c0p4j6bdilconpl87vmkh8tjiyd", "fields": {"session_data": "e30:1osNfT:w_k8gw
+C9wdvz5ZMlJDT89YHIMNC_ZiFz_gVC2LXkiOA", "expire_date": "2022-11-22T12:25:27.799Z"}}, {"model": "category.category", "pk": 8, "fields": {"category_name": "Freshwater", "slug": "freshwa
+ter", "description": "Setting up a freshwater fish aquarium can bring a serene nature scene into your home. Maintaining your live fish habitat is often a rewarding form of pet care th
+at allows you to personalize your fish’s environment to suit your tastes and their needs.", "category_image": "photos/categories/freshwater.jpg"}}, {"model": "category.category", "pk"
+: 9, "fields": {"category_name": "Saltwater", "slug": "saltwater", "description": "Setting up a freshwater fish aquarium can bring a serene nature scene into your home. Saltwater fish
+, also called marine fish or sea fish, are fish that live in seawater. Saltwater fish can swim and live alone or in a large group called a school.", "category_image": "photos/categori
+es/saltwater.jpg"}}, {"model": "category.category", "pk": 10, "fields": {"category_name": "Catfishes", "slug": "catfishes", "description": "A variety of catfish species. Make your cho
+ice for size and color.", "category_image": "photos/categories/catfish_31R7Zup.jpg"}}, {"model": "accounts.account", "pk": 1, "fields": {"password": "pbkdf2_sha256$390000$nqaFxKdGV6ox
+ssQTG2TSWE$bV5+5nktVf2tN/2PQlBayRiu0MnIDVFdVEj9AUTj0e0=", "is_superuser": false, "first_name": "Lachezar", "last_name": "Stamenov", "username": "username", "email": "lachezar.stamenov
+@abv.bg", "phone_number": "+359884336233", "date_joined": "2022-11-01T08:53:46.045Z", "last_login": "2022-12-04T12:42:02.740Z", "is_admin": true, "is_staff": true, "is_active": true,
+"is_superadmin": true, "groups": [], "user_permissions": []}}, {"model": "accounts.account", "pk": 67, "fields": {"password": "pbkdf2_sha256$390000$humzrWxbvLLdeodKz5ouWl$VPevsPH8B5VC
+8XbEYXz29/agtIpZWiVWOKaSu/ar0NE=", "is_superuser": false, "first_name": "Lachezar", "last_name": "Stamenov", "username": "lachezar.stamenov435@gmail.com", "email": "lachezar.stamenov4
+35@gmail.com", "phone_number": "", "date_joined": "2022-11-25T15:58:07.213Z", "last_login": "2022-11-25T20:25:14.564Z", "is_admin": true, "is_staff": true, "is_active": true, "is_supe
+radmin": false, "groups": [1], "user_permissions": []}}, {"model": "accounts.account", "pk": 75, "fields": {"password": "pbkdf2_sha256$390000$dJvStDwKDUY0ZMjlrC6KhP$+fVPB6ShQKH9pI4POM
+e3YRB5CD3VACK7ZdK/AyIWigE=", "is_superuser": false, "first_name": "Lachezar", "last_name": "Stamenov", "username": "luchko_88", "email": "luchko_88@abv.bg", "phone_number": "+35988433
+6233", "date_joined": "2022-12-02T13:26:17.483Z", "last_login": "2022-12-04T12:27:23.573Z", "is_admin": false, "is_staff": false, "is_active": true, "is_superadmin": false, "groups":
+[], "user_permissions": []}}, {"model": "accounts.userprofile", "pk": 2, "fields": {"user": 1, "address_line_1": "Sofia", "address_line_2": "", "profile_picture": "userprofile/avatar.
+jpg", "city": "Sofia", "country": "Bulgaria"}}, {"model": "accounts.userprofile", "pk": 13, "fields": {"user": 75, "address_line_1": "Sofia", "address_line_2": "", "profile_picture":
+"default/default-user.png", "city": "Sofia", "country": "Bulgaria"}}, {"model": "store.product", "pk": 1, "fields": {"product_name": "Cory Catfish", "slug": "cory-catfish", "descripti
+on": "Aquarium corydoras are a type of catfish that is a classic choice for every tank. They’re popular among experienced.", "price": 23, "images": "photos/products/cory_catfish.JPG",
+ "stock": 20, "is_available": true, "category": 10, "created_date": "2022-11-01T11:58:20.186Z", "modified_date": "2022-11-23T12:26:50.297Z"}}, {"model": "store.product", "pk": 2, "fie
+lds": {"product_name": "Angelfish", "slug": "angelfish", "description": "Angelfish grow to be quite large and will require an aquarium of 55 gallons or larger when full grown. Tall aq
+uariums are best, to accommodate their body shape.", "price": 35, "images": "photos/products/angelfish.jpg", "stock": 45, "is_available": true, "category": 8, "created_date": "2022-11
+-01T11:59:19.553Z", "modified_date": "2022-11-23T12:41:08.363Z"}}, {"model": "store.product", "pk": 3, "fields": {"product_name": "Julii Cory", "slug": "julii-cory", "description": "J
+ulii Cory is a small, peaceful, and schooling cory suitable for most aquariums and particularly those housing community and other peaceful fish. This cory's body is lightly colored in
+ hues of white/gray and ivory with a multitude of contrasting dark spots and noticeable black stripe running the length of its body. The black speckles are also found on the fins.", "
+price": 10, "images": "photos/products/julii_corydoras_czoFBKM.jpg", "stock": 5, "is_available": true, "category": 10, "created_date": "2022-11-05T16:15:24.278Z", "modified_date": "20
+22-11-05T16:15:24.278Z"}}, {"model": "store.product", "pk": 4, "fields": {"product_name": "sunburst_zebra_danio", "slug": "sunburst_zebra_danio", "description": "Sunburst Orange Zebra
+ Danio GloFish® is a brilliantly colored aquarium fish. It displays orange and silvery stripes running through the entire length of its body. GloFish® fish are born with their bright
+fluorescent colors, inheriting them from their parents. Their brilliant colors are NOT the result of any injections of dyes or otherwise. They require the same level of care as any ot
+her community fish.", "price": 12, "images": "photos/products/sunburst_danio_ep2Z9wR.png", "stock": 4, "is_available": true, "category": 8, "created_date": "2022-11-05T16:19:31.634Z",
+ "modified_date": "2022-11-05T16:19:31.634Z"}}, {"model": "store.product", "pk": 5, "fields": {"product_name": "Silvertip Tetra", "slug": "silvertip-tetra", "description": "SSilver-ti
+pped tetra or Copper Tetra, Hasemania Nana, is a nano fish that lives up to its common names. Its body is warm yellow/golden with striking and contrasting silvery tips on its fins. Si
+lver-tipped tetra is a fish perfectly suited for nano or community aquarium setups.", "price": 9, "images": "photos/products/tilver-tipped_tetra_JZQMkST.png", "stock": 9, "is_availabl
+e": true, "category": 8, "created_date": "2022-11-05T16:20:44.677Z", "modified_date": "2022-11-05T16:20:44.677Z"}}, {"model": "store.product", "pk": 6, "fields": {"product_name": "Red
+ Pencilfish Beckfordi", "slug": "red-pencilfish-beckfordi", "description": "Red Pencilfish Beckfordi are small, peaceful, and beautiful fish suitable for community fish aquariums and
+nano tanks. They have light blue tips on their fins and a broad dark stripe along the body with a red line above it. In good conditions, Beckfordi's red stripe intensifies and stands
+out on its body.", "price": 4, "images": "photos/products/pencilfish_beckfordi_uiKu472.webp", "stock": 0, "is_available": true, "category": 8, "created_date": "2022-11-05T16:22:03.624
+Z", "modified_date": "2022-11-05T16:48:00.286Z"}}, {"model": "store.product", "pk": 7, "fields": {"product_name": "Emperor Pleco", "slug": "emperor-pleco", "description": "Emperor Ple
+co, also known as Flash Emperor Pleco or by its scientific name as Panaqolus Albivermis, is a strikingly beautiful catfish. It has a dark brown to black body.", "price": 10, "images":
+ "photos/products/Emperor_pleco_L204__03778.webp", "stock": 20, "is_available": true, "category": 8, "created_date": "2022-11-23T11:54:05.526Z", "modified_date": "2022-11-23T11:54:05.
+526Z"}}, {"model": "store.product", "pk": 8, "fields": {"product_name": "Barb", "slug": "barb", "description": "Most barb fish are small, colorful, active and ideally suited for the c
+ommunity aquarium. Barbs are semi-aggressive fish when housed in the aquarium individually.", "price": 17, "images": "photos/products/yellow-barb.jpg", "stock": 52, "is_available": tr
+ue, "category": 8, "created_date": "2022-11-25T15:01:28.015Z", "modified_date": "2022-11-25T15:01:28.015Z"}}, {"model": "store.product", "pk": 11, "fields": {"product_name": "Danio",
+"slug": "danio", "description": "Danios and Minnows are small, active schooling fish well suited for the community aquarium. These hardy fish are most often used to cycle a new aquari
+um.", "price": 13, "images": "photos/products/green-danios_bnCngkJ.jpg", "stock": 19, "is_available": true, "category": 8, "created_date": "2022-11-25T15:27:09.128Z", "modified_date":
+ "2022-11-25T15:27:09.128Z"}}, {"model": "store.product", "pk": 12, "fields": {"product_name": "Clownfish", "slug": "clownfish", "description": "The Clownfish is one of the most popul
+ar saltwater fish today; probably in no small part due to the Disney movie Finding Nemo.", "price": 100, "images": "photos/products/ocellaris-clownfish.jpg", "stock": 6, "is_available
+": true, "category": 9, "created_date": "2022-11-25T19:25:01.774Z", "modified_date": "2022-11-25T19:25:01.774Z"}}, {"model": "store.product", "pk": 13, "fields": {"product_name": "Ble
+nny", "slug": "blenny", "description": "The Blenny is not only a beautiful fish, but it is also great for beginners because they’re so peaceful. They spend most of their time hiding a
+mong the rocks and plants.", "price": 120, "images": "photos/products/bicolor-blenny-1.jpg", "stock": 9, "is_available": true, "category": 9, "created_date": "2022-11-25T19:28:47.781Z
+", "modified_date": "2022-11-25T19:29:41.128Z"}}, {"model": "store.product", "pk": 14, "fields": {"product_name": "Hawkfish", "slug": "hawkfish", "description": "The Hawkfish comes in
+ different varieties and has an interesting look that adds interest to any saltwater aquarium. It is also another hardy fish, making it a good choice for saltwater beginners.", "price
+": 65, "images": "photos/products/hawkfish-1.jpg", "stock": 5, "is_available": true, "category": 9, "created_date": "2022-11-25T19:31:47.950Z", "modified_date": "2022-11-25T19:31:47.9
+50Z"}}, {"model": "store.product", "pk": 15, "fields": {"product_name": "Royal Gramma", "slug": "royal-gramma", "description": "The Royal Gramma is an inexpensive fish and adds a nice
+ burst of color to any saltwater aquarium. Due to its unique color pattern and smaller adult size, the Gramma is a good beginner fish for reef.", "price": 78, "images": "photos/produc
+ts/royal-gramma-1.jpg", "stock": 8, "is_available": true, "category": 9, "created_date": "2022-11-25T19:33:48.653Z", "modified_date": "2022-11-25T19:33:48.653Z"}}, {"model": "store.pr
+oduct", "pk": 17, "fields": {"product_name": "Armored Catfish", "slug": "armored-catfish", "description": "Among the most common freshwater catfish are corydoras (Greek for “helmet sk
+in”), a small armored variety that comes in several variations.", "price": 23, "images": "photos/products/freshwater-catfish.jpg", "stock": 69, "is_available": true, "category": 10, "
+created_date": "2022-12-02T08:54:38.522Z", "modified_date": "2022-12-02T08:58:18.832Z"}}, {"model": "store.product", "pk": 18, "fields": {"product_name": "Whiptail Catfish", "slug": "
+whiptail-catfish", "description": "Whiptail Catfish is a prehistoric-looking catfish. It has a long and slender body and a high dorsal fin. This fish is sure to provide something uniq
+ue to your aquarium.", "price": 98, "images": "photos/products/catfish.jpg", "stock": 15, "is_available": true, "category": 10, "created_date": "2022-12-04T12:05:08.256Z", "modified_d
+ate": "2022-12-04T12:05:08.256Z"}}, {"model": "store.product", "pk": 19, "fields": {"product_name": "Otocinclus Catfish", "slug": "otocinclus-catfish", "description": "Ottocinclus \"O
+to\" Catfish, also called dwarf otos, are very small and peaceful catfish that have gained in popularity in recent years. They have olive green/silver bodies through which a thick bla
+ck.", "price": 105, "images": "photos/products/Otocinclus_Catfish.jpg", "stock": 0, "is_available": true, "category": 10, "created_date": "2022-12-04T12:10:08.187Z", "modified_date":
+"2022-12-04T12:10:08.187Z"}}, {"model": "store.product", "pk": 20, "fields": {"product_name": "Tang Fish", "slug": "tang-fish", "description": "The yellow tang is one of the most popu
+lar fish in a saltwater aquarium. They're also easy to find, and relatively inexpensive.", "price": 125, "images": "photos/products/yellow_tang_fish.webp", "stock": 15, "is_available"
+: true, "category": 9, "created_date": "2022-12-04T12:45:20.096Z", "modified_date": "2022-12-04T12:45:20.096Z"}}, {"model": "store.variation", "pk": 5, "fields": {"product": 4, "varia
+tion_category": "color", "variation_value": "Green", "is_active": true, "created_date": "2022-11-13T16:16:16.987Z"}}, {"model": "store.variation", "pk": 6, "fields": {"product": 4, "v
+ariation_category": "color", "variation_value": "Brown", "is_active": true, "created_date": "2022-11-13T16:16:29.953Z"}}, {"model": "store.variation", "pk": 7, "fields": {"product": 4
+, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-11-13T16:16:39.260Z"}}, {"model": "store.variation", "pk": 8, "fields": {"product"
+: 4, "variation_category": "size", "variation_value": "Large", "is_active": true, "created_date": "2022-11-13T16:16:47.154Z"}}, {"model": "store.variation", "pk": 9, "fields": {"produ
+ct": 7, "variation_category": "color", "variation_value": "Black", "is_active": true, "created_date": "2022-11-23T12:09:31.857Z"}}, {"model": "store.variation", "pk": 10, "fields": {"
+product": 7, "variation_category": "color", "variation_value": "Brown", "is_active": true, "created_date": "2022-11-23T12:09:47.242Z"}}, {"model": "store.variation", "pk": 11, "fields
+": {"product": 7, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-11-23T12:09:58.745Z"}}, {"model": "store.variation", "pk": 12, "fi
+elds": {"product": 7, "variation_category": "size", "variation_value": "Large", "is_active": true, "created_date": "2022-11-23T12:10:17.620Z"}}, {"model": "store.variation", "pk": 13,
+ "fields": {"product": 1, "variation_category": "color", "variation_value": "Orange", "is_active": true, "created_date": "2022-11-23T12:27:47.556Z"}}, {"model": "store.variation", "pk
+": 14, "fields": {"product": 1, "variation_category": "color", "variation_value": "Black", "is_active": true, "created_date": "2022-11-23T12:27:59.839Z"}}, {"model": "store.variation"
+, "pk": 15, "fields": {"product": 1, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-11-23T12:28:08.904Z"}}, {"model": "store.variat
+ion", "pk": 16, "fields": {"product": 2, "variation_category": "color", "variation_value": "Pink", "is_active": true, "created_date": "2022-11-23T12:42:15.700Z"}}, {"model": "store.va
+riation", "pk": 17, "fields": {"product": 2, "variation_category": "color", "variation_value": "Black", "is_active": true, "created_date": "2022-11-23T12:42:27.871Z"}}, {"model": "sto
+re.variation", "pk": 18, "fields": {"product": 2, "variation_category": "color", "variation_value": "Multicolor", "is_active": true, "created_date": "2022-11-23T12:42:37.729Z"}}, {"mo
+del": "store.variation", "pk": 19, "fields": {"product": 2, "variation_category": "color", "variation_value": "Blue", "is_active": true, "created_date": "2022-11-23T12:43:00.448Z"}},
+{"model": "store.variation", "pk": 20, "fields": {"product": 2, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-11-23T12:43:10.182Z"
+}}, {"model": "store.variation", "pk": 21, "fields": {"product": 2, "variation_category": "size", "variation_value": "Medium", "is_active": true, "created_date": "2022-11-23T12:43:52.
+792Z"}}, {"model": "store.variation", "pk": 25, "fields": {"product": 11, "variation_category": "color", "variation_value": "Green", "is_active": true, "created_date": "2022-11-25T19:
+13:47.249Z"}}, {"model": "store.variation", "pk": 26, "fields": {"product": 11, "variation_category": "color", "variation_value": "Orange", "is_active": true, "created_date": "2022-11
+-25T19:14:06.248Z"}}, {"model": "store.variation", "pk": 27, "fields": {"product": 11, "variation_category": "color", "variation_value": "Purple", "is_active": true, "created_date": "
+2022-11-25T19:14:20.493Z"}}, {"model": "store.variation", "pk": 28, "fields": {"product": 11, "variation_category": "color", "variation_value": "Red", "is_active": true, "created_date
+": "2022-11-25T19:14:30.898Z"}}, {"model": "store.variation", "pk": 29, "fields": {"product": 11, "variation_category": "size", "variation_value": "Small", "is_active": true, "created
+_date": "2022-11-25T19:14:47.155Z"}}, {"model": "store.variation", "pk": 30, "fields": {"product": 8, "variation_category": "color", "variation_value": "Green", "is_active": true, "cr
+eated_date": "2022-11-25T19:15:25.378Z"}}, {"model": "store.variation", "pk": 31, "fields": {"product": 8, "variation_category": "color", "variation_value": "Purple", "is_active": tru
+e, "created_date": "2022-11-25T19:15:38.446Z"}}, {"model": "store.variation", "pk": 32, "fields": {"product": 8, "variation_category": "color", "variation_value": "Red", "is_active":
+true, "created_date": "2022-11-25T19:15:45.857Z"}}, {"model": "store.variation", "pk": 33, "fields": {"product": 8, "variation_category": "color", "variation_value": "Yellow", "is_act
+ive": true, "created_date": "2022-11-25T19:15:54.382Z"}}, {"model": "store.variation", "pk": 34, "fields": {"product": 8, "variation_category": "size", "variation_value": "Small", "is
+_active": true, "created_date": "2022-11-25T19:16:02.041Z"}}, {"model": "store.variation", "pk": 35, "fields": {"product": 8, "variation_category": "size", "variation_value": "Normal"
+, "is_active": true, "created_date": "2022-11-25T19:16:16.874Z"}}, {"model": "store.variation", "pk": 36, "fields": {"product": 12, "variation_category": "color", "variation_value": "
+Orange", "is_active": true, "created_date": "2022-11-25T19:25:25.351Z"}}, {"model": "store.variation", "pk": 37, "fields": {"product": 12, "variation_category": "size", "variation_val
+ue": "Small", "is_active": true, "created_date": "2022-11-25T19:25:35.420Z"}}, {"model": "store.variation", "pk": 38, "fields": {"product": 12, "variation_category": "size", "variatio
+n_value": "Medium", "is_active": true, "created_date": "2022-11-25T19:25:49.367Z"}}, {"model": "store.variation", "pk": 39, "fields": {"product": 12, "variation_category": "size", "va
+riation_value": "Large", "is_active": true, "created_date": "2022-11-25T19:26:00.254Z"}}, {"model": "store.variation", "pk": 40, "fields": {"product": 13, "variation_category": "color
+", "variation_value": "bicolor", "is_active": true, "created_date": "2022-11-25T19:30:00.791Z"}}, {"model": "store.variation", "pk": 41, "fields": {"product": 13, "variation_category"
+: "color", "variation_value": "Blue", "is_active": true, "created_date": "2022-11-25T19:30:14.165Z"}}, {"model": "store.variation", "pk": 42, "fields": {"product": 13, "variation_cate
+gory": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-11-25T19:30:22.099Z"}}, {"model": "store.variation", "pk": 43, "fields": {"product": 14, "variation
+_category": "color", "variation_value": "Red", "is_active": true, "created_date": "2022-11-25T19:32:02.568Z"}}, {"model": "store.variation", "pk": 44, "fields": {"product": 14, "varia
+tion_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-11-25T19:32:11.975Z"}}, {"model": "store.variation", "pk": 45, "fields": {"product": 14, "
+variation_category": "size", "variation_value": "Normal", "is_active": true, "created_date": "2022-11-25T19:32:29.452Z"}}, {"model": "store.variation", "pk": 46, "fields": {"product":
+ 15, "variation_category": "color", "variation_value": "Bicolor", "is_active": true, "created_date": "2022-11-25T19:34:15.201Z"}}, {"model": "store.variation", "pk": 47, "fields": {"p
+roduct": 14, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-11-25T19:34:23.244Z"}}, {"model": "store.variation", "pk": 48, "fields"
+: {"product": 14, "variation_category": "size", "variation_value": "Large", "is_active": true, "created_date": "2022-11-25T19:34:33.309Z"}}, {"model": "store.variation", "pk": 49, "fi
+elds": {"product": 17, "variation_category": "color", "variation_value": "Grey", "is_active": true, "created_date": "2022-12-02T08:54:58.912Z"}}, {"model": "store.variation", "pk": 50
+, "fields": {"product": 17, "variation_category": "color", "variation_value": "Bicolor", "is_active": true, "created_date": "2022-12-02T08:55:11.549Z"}}, {"model": "store.variation",
+"pk": 51, "fields": {"product": 17, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-12-02T08:55:19.473Z"}}, {"model": "store.variati
+on", "pk": 52, "fields": {"product": 17, "variation_category": "size", "variation_value": "Large", "is_active": true, "created_date": "2022-12-02T08:55:30.370Z"}}, {"model": "store.va
+riation", "pk": 53, "fields": {"product": 3, "variation_category": "color", "variation_value": "White", "is_active": true, "created_date": "2022-12-02T08:56:58.163Z"}}, {"model": "sto
+re.variation", "pk": 54, "fields": {"product": 3, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-12-02T08:57:06.104Z"}}, {"model":
+"store.variation", "pk": 55, "fields": {"product": 15, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-12-04T12:00:31.448Z"}}, {"mod
+el": "store.variation", "pk": 56, "fields": {"product": 15, "variation_category": "size", "variation_value": "Normal", "is_active": true, "created_date": "2022-12-04T12:00:44.802Z"}},
+ {"model": "store.variation", "pk": 57, "fields": {"product": 15, "variation_category": "size", "variation_value": "Large", "is_active": true, "created_date": "2022-12-04T12:01:05.274
+Z"}}, {"model": "store.variation", "pk": 58, "fields": {"product": 18, "variation_category": "color", "variation_value": "Black", "is_active": true, "created_date": "2022-12-04T12:05:
+31.166Z"}}, {"model": "store.variation", "pk": 59, "fields": {"product": 18, "variation_category": "size", "variation_value": "Small", "is_active": true, "created_date": "2022-12-04T1
+2:05:39.868Z"}}, {"model": "store.variation", "pk": 60, "fields": {"product": 18, "variation_category": "size", "variation_value": "Normal", "is_active": true, "created_date": "2022-1
+2-04T12:05:51.300Z"}}, {"model": "store.variation", "pk": 63, "fields": {"product": 20, "variation_category": "color", "variation_value": "Black", "is_active": true, "created_date": "
+2022-12-04T12:45:36.055Z"}}, {"model": "store.variation", "pk": 64, "fields": {"product": 20, "variation_category": "color", "variation_value": "Yellow", "is_active": true, "created_d
+ate": "2022-12-04T12:45:49.302Z"}}, {"model": "store.variation", "pk": 65, "fields": {"product": 20, "variation_category": "color", "variation_value": "Blue", "is_active": true, "crea
+ted_date": "2022-12-04T12:45:59.188Z"}}, {"model": "store.variation", "pk": 66, "fields": {"product": 20, "variation_category": "size", "variation_value": "Small", "is_active": true,
+"created_date": "2022-12-04T12:46:06.740Z"}}, {"model": "store.variation", "pk": 67, "fields": {"product": 20, "variation_category": "size", "variation_value": "Large", "is_active": t
+rue, "created_date": "2022-12-04T12:46:14.894Z"}}, {"model": "store.reviewrating", "pk": 2, "fields": {"product": 2, "user": 1, "subject": "", "review": "", "rating": 3.0, "ip": "127.
+0.0.1", "status": true, "created_at": "2022-11-25T12:26:25.906Z", "updated_at": "2022-11-25T12:26:25.906Z"}}, {"model": "store.reviewrating", "pk": 3, "fields": {"product": 17, "user"
+: 75, "subject": "Very Nice fish.", "review": "Thanks to Precious fish team. You are greate!", "rating": 3.0, "ip": "127.0.0.1", "status": true, "created_at": "2022-12-04T12:07:35.089
+Z", "updated_at": "2022-12-04T12:07:35.089Z"}}, {"model": "store.reviewrating", "pk": 4, "fields": {"product": 12, "user": 75, "subject": "", "review": "", "rating": 4.5, "ip": "127.0
+.0.1", "status": true, "created_at": "2022-12-04T12:07:55.740Z", "updated_at": "2022-12-04T12:07:55.740Z"}}, {"model": "store.reviewrating", "pk": 5, "fields": {"product": 19, "user":
+ 1, "subject": "", "review": "", "rating": 2.0, "ip": "127.0.0.1", "status": true, "created_at": "2022-12-04T12:12:25.143Z", "updated_at": "2022-12-04T12:12:25.143Z"}}, {"model": "sto
+re.productgallery", "pk": 1, "fields": {"product": 2, "image": "store/products/Black-Angelfish.jpg"}}, {"model": "store.productgallery", "pk": 2, "fields": {"product": 2, "image": "st
+ore/products/angelfish-pink.jpg"}}, {"model": "store.productgallery", "pk": 3, "fields": {"product": 7, "image": "store/products/Alenquer_Tiger_Pleco__25361.webp"}}, {"model": "store.
+productgallery", "pk": 4, "fields": {"product": 7, "image": "store/products/L204_Emperor_Pleco__85860.webp"}}, {"model": "store.productgallery", "pk": 6, "fields": {"product": 1, "ima
+ge": "store/products/Black_Venezuela_Cory__70908.webp"}}, {"model": "store.productgallery", "pk": 7, "fields": {"product": 1, "image": "store/products/Orange_Laser_Cory__04723.jpg"}},
+ {"model": "store.productgallery", "pk": 8, "fields": {"product": 1, "image": "store/products/Panda_Cory__30218.webp"}}, {"model": "store.productgallery", "pk": 9, "fields": {"product
+": 2, "image": "store/products/blue-Angel-Fish-Assorted-Small.jpeg"}}, {"model": "store.productgallery", "pk": 10, "fields": {"product": 2, "image": "store/products/multicolor-freshwa
+ter-angelfish.jpg"}}, {"model": "store.productgallery", "pk": 11, "fields": {"product": 8, "image": "store/products/green-barb.jpg"}}, {"model": "store.productgallery", "pk": 12, "fie
+lds": {"product": 8, "image": "store/products/Purple_Barb.jpg"}}, {"model": "store.productgallery", "pk": 13, "fields": {"product": 8, "image": "store/products/red-barb.jpg"}}, {"mode
+l": "store.productgallery", "pk": 20, "fields": {"product": 11, "image": "store/products/orange-danios_Tjn5AUW.jpg"}}, {"model": "store.productgallery", "pk": 21, "fields": {"product"
+: 11, "image": "store/products/purple-danios_GIZIKhZ.jpg"}}, {"model": "store.productgallery", "pk": 22, "fields": {"product": 11, "image": "store/products/red-danios_gfCP4jd.jpg"}},
+{"model": "store.productgallery", "pk": 23, "fields": {"product": 13, "image": "store/products/blue-benny.jfif"}}, {"model": "store.productgallery", "pk": 24, "fields": {"product": 17
+, "image": "store/products/freshwater-catfish-1.jpg"}}, {"model": "store.productgallery", "pk": 25, "fields": {"product": 17, "image": "store/products/freshwater-catfish-2.jpg"}}, {"m
+odel": "store.productgallery", "pk": 26, "fields": {"product": 17, "image": "store/products/freshwater-catfish-grey.jpg"}}, {"model": "store.productgallery", "pk": 27, "fields": {"pro
+duct": 20, "image": "store/products/black_tang_fish.jfif"}}, {"model": "store.productgallery", "pk": 28, "fields": {"product": 20, "image": "store/products/blue_tang_fish.webp"}}, {"m
+odel": "cart.cart", "pk": 19, "fields": {"cart_id": "f8g8u2dov4or1xjcszpwi3rpx0eu5ioi", "date_added": "2022-11-13"}}, {"model": "cart.cart", "pk": 20, "fields": {"cart_id": "f5x2xziug
+m4x13qnawmcf3inqtva04db", "date_added": "2022-11-13"}}, {"model": "cart.cart", "pk": 21, "fields": {"cart_id": "tbesgg61ztikk5xl1f8fhswgs29e70bc", "date_added": "2022-11-13"}}, {"mode
+l": "cart.cart", "pk": 22, "fields": {"cart_id": "9lqm5s2f62oq1qpjgd9qourr8dkhccje", "date_added": "2022-11-14"}}, {"model": "cart.cart", "pk": 23, "fields": {"cart_id": "o2u9o36qyr0l
+jv2km9xt7cj4re5ohxjz", "date_added": "2022-11-14"}}, {"model": "cart.cart", "pk": 24, "fields": {"cart_id": "6i1s5ajxnix1xaj6oa9sjko6swoc258d", "date_added": "2022-11-20"}}, {"model":
+ "cart.cart", "pk": 25, "fields": {"cart_id": "9zv4x9bz13xe85xkiysxa4mr0syr65pg", "date_added": "2022-11-29"}}, {"model": "cart.cart", "pk": 26, "fields": {"cart_id": "bx1ry94amjwhs9o
+dkvkde6lbxbcq27nk", "date_added": "2022-12-01"}}, {"model": "cart.cart", "pk": 27, "fields": {"cart_id": "ltj9mzfjmltv5f156a4aqdr5rev5bfuv", "date_added": "2022-12-02"}}, {"model": "c
+art.cart", "pk": 28, "fields": {"cart_id": "ckfcqk4gehthqgqdiq5qx9czvc2a3wcc", "date_added": "2022-12-04"}}, {"model": "cart.cartitem", "pk": 98, "fields": {"user": null, "product": 1
+, "cart": 22, "quantity": 1, "is_active": true, "variations": []}}, {"model": "cart.cartitem", "pk": 102, "fields": {"user": null, "product": 1, "cart": 24, "quantity": 2, "is_active"
+: true, "variations": []}}, {"model": "cart.cartitem", "pk": 132, "fields": {"user": null, "product": 2, "cart": 28, "quantity": 1, "is_active": true, "variations": [16, 21]}}, {"mode
+l": "cart.cartitem", "pk": 133, "fields": {"user": 75, "product": 2, "cart": null, "quantity": 1, "is_active": true, "variations": [17, 20]}}, {"model": "cart.cartitem", "pk": 134, "f
+ields": {"user": 1, "product": 20, "cart": null, "quantity": 1, "is_active": true, "variations": [63, 67]}}, {"model": "orders.order", "pk": 1, "fields": {"user": 1, "payment": null,
+"order_number": "202211131", "first_name": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "address_line
+_2": "", "country": "Bulgaria", "city": "Sofia", "order_note": "sdsdsds", "order_total": 20.4, "tax": 0.4, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at": "2022
+-11-13T19:43:13.541Z", "updated_at": "2022-11-13T19:43:13.545Z"}}, {"model": "orders.order", "pk": 2, "fields": {"user": null, "payment": null, "order_number": "202211142", "first_nam
+e": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "address_line_2": "", "country": "Bulgaria", "city":
+ "Sofia", "order_note": "", "order_total": 102.0, "tax": 2.0, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at": "2022-11-14T08:51:57.969Z", "updated_at": "2022-11
+-14T08:51:57.977Z"}}, {"model": "orders.order", "pk": 3, "fields": {"user": null, "payment": null, "order_number": "202211143", "first_name": "Lachezar", "last_name": "Stamenov", "pho
+ne": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "address_line_2": "", "country": "Bulgaria", "city": "Sofia", "order_note": "", "order_total": 10
+2.0, "tax": 2.0, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at": "2022-11-14T09:26:04.669Z", "updated_at": "2022-11-14T09:26:04.672Z"}}, {"model": "orders.order
+", "pk": 4, "fields": {"user": null, "payment": null, "order_number": "202211144", "first_name": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.stam
+enov@abv.bg", "address_line_1": "Sofia", "address_line_2": "", "country": "Bulgaria", "city": "Sofia", "order_note": "", "order_total": 102.0, "tax": 2.0, "status": "New", "ip": "127.
+0.0.1", "is_ordered": false, "created_at": "2022-11-14T09:28:54.027Z", "updated_at": "2022-11-14T09:28:54.029Z"}}, {"model": "orders.order", "pk": 5, "fields": {"user": null, "payment
+": null, "order_number": "202211145", "first_name": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "add
+ress_line_2": "", "country": "Bulgaria", "city": "Sofia", "order_note": "Test", "order_total": 102.0, "tax": 2.0, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at"
+: "2022-11-14T11:51:15.122Z", "updated_at": "2022-11-14T11:51:15.128Z"}}, {"model": "orders.order", "pk": 6, "fields": {"user": 1, "payment": null, "order_number": "202211236", "first
+_name": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "address_line_2": "", "country": "Bulgaria", "ci
+ty": "Sofia", "order_note": "", "order_total": 89.76, "tax": 1.76, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at": "2022-11-23T12:44:34.392Z", "updated_at": "20
+22-11-23T12:44:34.397Z"}}, {"model": "orders.order", "pk": 7, "fields": {"user": 1, "payment": null, "order_number": "202211297", "first_name": "Lachezar", "last_name": "Stamenov", "p
+hone": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "address_line_2": "", "country": "Bulgaria", "city": "Sofia", "order_note": "", "order_total":
+200.94, "tax": 3.94, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at": "2022-11-29T07:48:42.816Z", "updated_at": "2022-11-29T07:48:42.828Z"}}, {"model": "orders.o
+rder", "pk": 8, "fields": {"user": 1, "payment": null, "order_number": "202211298", "first_name": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.sta
+menov@abv.bg", "address_line_1": "Sofia", "address_line_2": "", "country": "Bulgaria", "city": "Sofia", "order_note": "", "order_total": 200.94, "tax": 3.94, "status": "New", "ip": "1
+27.0.0.1", "is_ordered": false, "created_at": "2022-11-29T09:44:32.235Z", "updated_at": "2022-11-29T09:44:32.237Z"}}, {"model": "orders.order", "pk": 9, "fields": {"user": 75, "paymen
+t": null, "order_number": "202212029", "first_name": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "ad
+dress_line_2": "", "country": "Bulgaria", "city": "Sofia", "order_note": "", "order_total": 94.86, "tax": 1.86, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at":
+"2022-12-02T13:30:49.205Z", "updated_at": "2022-12-02T13:30:49.215Z"}}, {"model": "orders.order", "pk": 10, "fields": {"user": 75, "payment": null, "order_number": "2022120410", "firs
+t_name": "Lachezar", "last_name": "Stamenov", "phone": "+359884336233", "email": "lachezar.stamenov@abv.bg", "address_line_1": "Sofia", "address_line_2": "", "country": "Bulgaria", "c
+ity": "Sofia", "order_note": "", "order_total": 130.56, "tax": 2.56, "status": "New", "ip": "127.0.0.1", "is_ordered": false, "created_at": "2022-12-04T12:27:35.456Z", "updated_at": "
+2022-12-04T12:27:35.458Z"}}]
