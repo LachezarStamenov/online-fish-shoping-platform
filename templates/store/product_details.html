@@ -12,12 +12,12 @@
                             <div class="img-big-wrap mainImage">
                                 <center><img src="{{ product.images.url }}"></center>
                             </div>
-
                         </article>
                         <ul class="thumb">
                             <li>
-                                <a href="{{ product.images.url }}" target="mainImage"><img src="{{ product.images.url }}"
-                                                                                        alt="Product Image"> </a>
+                                <a href="{{ product.images.url }}" target="mainImage"><img
+                                        src="{{ product.images.url }}"
+                                        alt="Product Image"> </a>
                                 {% for image in product_gallery %}
                                     <a href="{{ image.image.url }}" target="mainImage"><img src="{{ image.image.url }}"
                                                                                             alt="Product Image"> </a>
@@ -80,7 +80,6 @@
             <div class="row">
                 <div class="col-md-9">
 
-
                     <form action="{% url 'submit review' product.pk %}" method="post">
                         {% csrf_token %}
                         <h5>Please Add Your Review.</h5>
@@ -123,9 +122,6 @@
                                 <p>You must be logged in to post a review. <span><a
                                         href="{% url 'login' %}">Login now</a></span></p>
                             {% endif %}
-{#                            <div class="alert alert-danger" role="alert" style="margin-top:10px;">#}
-{#                                2-Factor Review Submission is disabled for demo purpose.#}
-{#                            </div>#}
 
                         </div>
                         {% include 'partials/alerts.html' %}

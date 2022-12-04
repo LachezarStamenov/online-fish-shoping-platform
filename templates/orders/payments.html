@@ -3,7 +3,6 @@
 
 {% block page_content %}
 
-
     <section class="section-content padding-y bg">
         <div class="container">
 
@@ -23,8 +22,6 @@
                             {% if order.order_note %}
                                 <b>Order Note: </b> {{ order.order_note }}
                             {% endif %}
-
-
                         </div>
                     </div>
                     <div class="card">
@@ -77,10 +74,8 @@
                                                 <small class="text-muted"> $ {{ cart_item.product.price }} each </small>
                                             </div>
                                         </td>
-
                                     </tr>
                                 {% endfor %}
-
                                 </tbody>
                             </table>
 
@@ -108,12 +103,8 @@
                             <p class="text-center mb-3">
                                 <img src="{% static 'images/misc/payments.png' %}" height="26">
                             </p>
-
-
                             <div id="paypal-button-container">
-
                             </div>
-
                         </div>
                     </div>
                     <div class="alert alert-danger" role="alert">

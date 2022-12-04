@@ -71,11 +71,9 @@
                                     <th scope="col">Product</th>
                                     <th scope="col" width="120">Quantity</th>
                                     <th scope="col" width="120">Price</th>
-
                                 </tr>
                                 </thead>
                                 <tbody>
-
                                 {% for cart_item in cart_items %}
                                     <tr>
                                         <td>
@@ -97,7 +95,6 @@
                                             </figure>
                                         </td>
                                         <td>
-
                                             <label for="">{{ cart_item.quantity }}</label>
                                         </td>
                                         <td>
@@ -107,24 +104,18 @@
                                                     each </small>
                                             </div>
                                         </td>
-
                                     </tr>
                                 {% endfor %}
 
                                 </tbody>
                             </table>
-
                             <button type="submit" name="submit" class="btn btn-primary btn-block">Place Order</button>
                             <a href="{% url 'store' %}" class="btn btn-light btn-block">Continue Shopping</a>
                             </form>
                         </div>
                     </div>
-
                 </aside>
-
             </div>
-
-
         </div>
     </section>
 

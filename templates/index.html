@@ -2,7 +2,6 @@
 {% load static %}
 {% block page_content %}
 
-
     <section class="section-intro padding-y-sm">
         <div class="container">
             <div class="intro-banner-wrap">
@@ -11,16 +10,12 @@
 
         </div>
     </section>
-
     <section class="section-name padding-y-sm">
         <div class="container">
-
             <header class="section-heading">
                 <a href="{% url 'store' %}" class="btn btn-outline-primary float-right">See all</a>
                 <h3 class="section-title">Popular Aquarium Products</h3>
             </header>
-
-
             <div class="row">
                 {% for product in products %}
                     <div class="col-md-3">
