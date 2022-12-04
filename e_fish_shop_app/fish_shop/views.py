@@ -8,6 +8,7 @@ class HomeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        reviews = None
         products = Product.objects.all().filter(is_available=True).order_by('-created_date')
         for product in products:
             reviews = ReviewRating.objects.filter(product_id=product.id, status=True)
