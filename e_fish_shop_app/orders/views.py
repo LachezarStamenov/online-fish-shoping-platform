@@ -12,6 +12,8 @@ def payments(request):
 
 
 def place_order(request, total=0, quantity=0):
+    """View for creating order with user information."""
+
     current_user = request.user
 
     cart_items = CartItem.objects.filter(user=current_user)

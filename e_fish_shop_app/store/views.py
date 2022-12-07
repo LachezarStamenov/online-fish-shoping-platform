@@ -14,6 +14,8 @@ NUMBER_OF_PRODUCTS_PER_PAGE = 6
 
 
 def store(request, category_slug=None):
+    """View for rendering the store template with information about all the products."""
+
     if category_slug is not None:
         categories = get_object_or_404(Category, slug=category_slug)
         products = Product.objects.all().filter(category=categories, is_available=True)
@@ -98,6 +100,8 @@ class SearchView(views.ListView):
 
 
 def submit_review(request, product_pk):
+    """View for submission of the user review."""
+
     # get current url and save it to url variable
     url = request.META.get('HTTP_REFERER')
 
