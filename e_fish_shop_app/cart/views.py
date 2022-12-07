@@ -9,6 +9,8 @@ from django.views import generic as views
 
 
 def add_product_to_cart(request, product_pk):
+    """ View for adding the chosen product to cart"""
+
     current_user = request.user
     product = Product.objects.get(id=product_pk)
 
@@ -95,6 +97,7 @@ def add_product_to_cart(request, product_pk):
 
 
 def remove_product_from_cart(request, product_pk, cart_item_pk):
+    """ View for decreasing the product quantity in the cart."""
 
     product = get_object_or_404(Product, pk=product_pk)
     try:
@@ -114,6 +117,7 @@ def remove_product_from_cart(request, product_pk, cart_item_pk):
 
 
 class RemoveCartItemView(views.View):
+    """View for removing the chosen product from the cart."""
     def get(self, *args, **kwargs):
         product_pk = self.kwargs.get('product_pk')
         cart_item_pk = self.kwargs.get('cart_item_pk')
@@ -128,6 +132,7 @@ class RemoveCartItemView(views.View):
 
 
 def cart(request, total_price=0, quantity=0, cart_items=None):
+    """View rendering the cart detail information."""
 
     tax = 0
     grand_total = 0
@@ -155,6 +160,7 @@ def cart(request, total_price=0, quantity=0, cart_items=None):
 
 @login_required(login_url='login')
 def checkout(request, total_price=0, quantity=0, cart_items=None):
+    """ Checkout view rendering checkout template."""
 
     tax = 0
     grand_total = 0

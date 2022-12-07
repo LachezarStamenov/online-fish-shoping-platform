@@ -23,6 +23,10 @@ UserModel = get_user_model()
 
 
 def register(request):
+    """
+    View for user registration. Rendering register template.
+    User activation via email required.
+    """
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
@@ -72,6 +76,8 @@ def register(request):
 
 
 def activate(request, uidb64, token):
+    """ View for register activation validation."""
+
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
         user = UserModel.objects.get(pk=uid)
@@ -89,6 +95,8 @@ def activate(request, uidb64, token):
 
 
 class LogoutView(SuccessMessageMixin, auth_views.LogoutView):
+    """ Logout view rendering to login template."""
+
     template_name = 'accounts/login.html'
 
     def get_context_data(self, **kwargs):
@@ -96,6 +104,8 @@ class LogoutView(SuccessMessageMixin, auth_views.LogoutView):
 
 
 def login(request):
+    """Login view for user log in. If login is successful render to dashboard template."""
+
     if request.method == 'POST':
         email = request.POST['email']
         password = request.POST['password']
@@ -159,6 +169,8 @@ def login(request):
 
 @login_required(login_url='login')
 def dashboard(request):
+    """Dashboard view. Shows user information for orders, ability for profile update."""
+
     orders = Order.objects.order_by('-created_at').filter(user_id=request.user.id, is_ordered=True)
     orders_count = orders.count()
 
@@ -172,6 +184,9 @@ def dashboard(request):
 
 
 def forgot_password(request):
+    """Forgot password view allowing the users to change their password.
+    It sends link to user email for password change."""
+
     if request.method == 'POST':
         email = request.POST['email']
         if UserModel.objects.filter(email=email).exists():
@@ -201,6 +216,8 @@ def forgot_password(request):
 
 
 def reset_password_validate(request, uidb64, token):
+    """View for validation of the email link for changing the user password."""
+
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
         user = UserModel.objects.get(pk=uid)
@@ -218,6 +235,8 @@ def reset_password_validate(request, uidb64, token):
 
 
 def reset_password(request):
+    """Reset password view which change the user password."""
+
     if request.method == 'POST':
         password = request.POST['password']
         confirm_password = request.POST['confirm_password']
@@ -237,6 +256,8 @@ def reset_password(request):
 
 
 class MyOrdersView(views.ListView):
+    """Orders view rendering my_orders template."""
+
     model = Order
     template_name = 'accounts/my_orders.html'
 
@@ -248,6 +269,8 @@ class MyOrdersView(views.ListView):
 
 @login_required(login_url='login')
 def edit_profile(request):
+    """View for profile user update. If the update is successful redirect to dashboard view."""
+
     userprofile = get_object_or_404(UserProfile, user=request.user)
     if request.method == 'POST':
         user_form = UserForm(request.POST, instance=request.user)
@@ -256,7 +279,7 @@ def edit_profile(request):
             user_form.save()
             profile_form.save()
             messages.success(request, 'Your profile has been updated.')
-            return redirect('edit profile')
+            return redirect('dashboard')
     else:
         user_form = UserForm(instance=request.user)
         profile_form = UserProfileForm(instance=userprofile)
@@ -270,11 +293,12 @@ def edit_profile(request):
 
 @login_required(login_url='login')
 def change_password(request):
+    """ View allowing the users to change their password from their profiles."""
+
     if request.method == 'POST':
         current_password = request.POST['current_password']
         new_password = request.POST['new_password']
         confirm_password = request.POST['confirm_password']
-
         user = UserModel.objects.get(username__exact=request.user.username)
 
         if new_password == confirm_password:
