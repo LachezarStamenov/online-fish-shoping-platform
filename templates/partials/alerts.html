@@ -14,19 +14,18 @@
 {% endif %}
 
 {% if form.errors %}
-    <div class="alert alert-error">
-        <h4>Please fix the following errors</h4>
-        <ul>
-        {% for field in form %}
-          {% if field.errors %}
-            {% for error in field.errors %}
-              <li><a href="#id_{{ field.name }}" class="alert-danger" >{{ error|escape }}</a></li>
-            {% endfor %}
-          {% endif %}
+    {% for field in form %}
+        {% for error in field.errors %}
+            <div class="alert alert-danger">
+                <strong>{{ error|escape }}</strong>
+            </div>
         {% endfor %}
-      </ul>
-      {% if form.non_field_errors %}
-        {{ form.non_field_errors|escape }}
-      {% endif %}
-    </div>
-  {% endif %}
+    {% endfor %}
+
+    {% for error in form.non_field_errors %}
+        <div class="alert alert-danger">
+            <strong>{{ error|escape }}</strong>
+        </div>
+    {% endfor %}
+
+{% endif %}
