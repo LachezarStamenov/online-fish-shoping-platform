@@ -133,20 +133,22 @@ class RemoveCartItemView(views.View):
 
 def cart(request, total_price=0, quantity=0, cart_items=None):
     """View rendering the cart detail information."""
+    try:
+        tax = 0
+        grand_total = 0
+        if request.user.is_authenticated:
+            cart_items = CartItem.objects.filter(user=request.user, is_active=True)
+        else:
+            cart = _get_cart(request)
+            cart_items = CartItem.objects.filter(cart=cart, is_active=True)
 
-    tax = 0
-    grand_total = 0
-    if request.user.is_authenticated:
-        cart_items = CartItem.objects.filter(user=request.user, is_active=True)
-    else:
-        cart = _get_cart(request)
-        cart_items = CartItem.objects.filter(cart=cart, is_active=True)
-
-    for cart_item in cart_items:
-        total_price += (cart_item.product.price * cart_item.quantity)
-        quantity += cart_item.quantity
-    tax = (2 * total_price) / 100
-    grand_total = total_price + tax
+        for cart_item in cart_items:
+            total_price += (cart_item.product.price * cart_item.quantity)
+            quantity += cart_item.quantity
+        tax = (2 * total_price) / 100
+        grand_total = total_price + tax
+    except ObjectDoesNotExist:
+        pass
 
     context = {
         'total_price': total_price,
