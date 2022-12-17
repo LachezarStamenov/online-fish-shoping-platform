@@ -12,18 +12,5 @@ The project app uses environment variables to hide sensitive information.
 
 DISCLAIMER: This app is not a fully operational product, it's not intended for commercial use and has many features that haven't been properly tested or developed.
 
-![Picture1](https://user-images.githubusercontent.com/94559783/205304997-a8b94efe-0d25-43ec-b055-3d50f846806c.png)
-
-![Picture2](https://user-images.githubusercontent.com/94559783/205305022-012106e0-4723-4f5e-8359-99ebd2f7db31.png)
-
-![Picture3](https://user-images.githubusercontent.com/94559783/205305028-545261b0-3779-4eaf-a3ad-92e767a3f560.png)
-
-![Picture4](https://user-images.githubusercontent.com/94559783/205305036-7a639eaa-5b0c-4f68-99b4-fa948b753c7a.png)
-
-![Picture5](https://user-images.githubusercontent.com/94559783/205305052-8444bee1-b609-443c-ae19-2b2868f3c47e.png)
-
-![Picture6](https://user-images.githubusercontent.com/94559783/205305060-40282832-2c66-4101-8636-5ca607126c9f.png)
-
-![Picture7](https://user-images.githubusercontent.com/94559783/205305069-4d7cecd7-7b8d-46db-9355-5226012830d2.png)
-
-![Picture8](https://user-images.githubusercontent.com/94559783/205305077-66342d52-26ff-4389-963a-7052b7e7e04a.png)
+Home page for the guests.
+![image](https://user-images.githubusercontent.com/94559783/208235347-65711f4f-07b5-44ad-b6e8-da62a3d6fc9e.png)
