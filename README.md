@@ -1,3 +1,4 @@
+
 # online-fish-shoping-platform
 
 Python Web Framework @ SoftUni
@@ -12,18 +13,27 @@ The project app uses environment variables to hide sensitive information.
 
 DISCLAIMER: This app is not a fully operational product, it's not intended for commercial use and has many features that haven't been properly tested or developed.
 
-![Picture1](https://user-images.githubusercontent.com/94559783/205304997-a8b94efe-0d25-43ec-b055-3d50f846806c.png)
+Home page for the guests.
 
-![Picture2](https://user-images.githubusercontent.com/94559783/205305022-012106e0-4723-4f5e-8359-99ebd2f7db31.png)
+![image](https://user-images.githubusercontent.com/94559783/208235347-65711f4f-07b5-44ad-b6e8-da62a3d6fc9e.png)
 
-![Picture3](https://user-images.githubusercontent.com/94559783/205305028-545261b0-3779-4eaf-a3ad-92e767a3f560.png)
+Register page.
 
-![Picture4](https://user-images.githubusercontent.com/94559783/205305036-7a639eaa-5b0c-4f68-99b4-fa948b753c7a.png)
+![image](https://user-images.githubusercontent.com/94559783/208235413-e2f37c24-55cd-47ea-99dc-1790be9d1fa1.png)
 
-![Picture5](https://user-images.githubusercontent.com/94559783/205305052-8444bee1-b609-443c-ae19-2b2868f3c47e.png)
+Login page.
 
-![Picture6](https://user-images.githubusercontent.com/94559783/205305060-40282832-2c66-4101-8636-5ca607126c9f.png)
+![image](https://user-images.githubusercontent.com/94559783/208235447-229ee9c5-66f4-4af0-9dba-3a17a0e64af0.png)
 
-![Picture7](https://user-images.githubusercontent.com/94559783/205305069-4d7cecd7-7b8d-46db-9355-5226012830d2.png)
+Store page with all products fishes.
 
-![Picture8](https://user-images.githubusercontent.com/94559783/205305077-66342d52-26ff-4389-963a-7052b7e7e04a.png)
+![image](https://user-images.githubusercontent.com/94559783/208235525-96e5070e-a3e4-4f23-8576-51d59fcaca20.png)
+
+Fish details page.
+
+![image](https://user-images.githubusercontent.com/94559783/208235547-591e7107-04ea-4433-8df2-7c14c1a96ee0.png)
+
+Cart page.
+
+![image](https://user-images.githubusercontent.com/94559783/208235603-f9d105dc-884b-4c26-b21f-d75f4c53f1b6.png)
+
